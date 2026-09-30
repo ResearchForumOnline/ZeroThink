@@ -1,0 +1,13 @@
+{
+  "name": "@researchforumonline/zerothink",
+  "version": "1.0.0",
+  "description": "Self-hosted research engine with deterministic evidence retrieval and bounded draft, critique and revision workflows.",
+  "main": "engine.cjs",
+  "bin": { "zerothink": "cli.cjs" },
+  "scripts": { "test": "node --test test/*.test.cjs", "check": "node --check engine.cjs && node --check providers.cjs && node --check cli.cjs && npm test" },
+  "engines": { "node": ">=22" },
+  "license": "Apache-2.0",
+  "author": "Shafaet Brady Hussain",
+  "repository": { "type": "git", "url": "https://github.com/ResearchForumOnline/ZeroThink.git" },
+  "files": ["engine.cjs", "templates.cjs", "providers.cjs", "cli.cjs", "README.md", "LICENSE", "NOTICE", "PROVENANCE.json", "examples"]
+}

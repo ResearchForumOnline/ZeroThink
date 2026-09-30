@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.*
+*.local.json
+research-output.*
+*.ztz
+*.sqlite*
+*.db
