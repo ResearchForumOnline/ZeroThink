@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ZeroThink DNA Evidence Card",
+  "type": "object",
+  "required": [
+    "title",
+    "claim_type",
+    "claim_label",
+    "evidence_level",
+    "confidence_score",
+    "confidence_band",
+    "method",
+    "explanation",
+    "limitations",
+    "next_steps"
+  ],
+  "properties": {
+    "title": {"type": "string"},
+    "claim_type": {
+      "type": "string",
+      "enum": [
+        "raw_quality",
+        "ancestry_signal",
+        "ancestry_question",
+        "health_research",
+        "pharmacogenomics",
+        "haplogroup",
+        "royal_lineage",
+        "lineage_gap",
+        "privacy"
+      ]
+    },
+    "claim_label": {"type": "string"},
+    "evidence_level": {
+      "type": "string",
+      "enum": [
+        "not_checked",
+        "no_evidence",
+        "not_enough_data",
+        "research_only",
+        "limited",
+        "conflicting",
+        "possible",
+        "likely",
+        "established",
+        "family_story_only",
+        "weak_clue",
+        "plausible_route",
+        "documentary_support_needed",
+        "dna_supported_clue",
+        "strong_lineage_case",
+        "not_provable_from_current_data"
+      ]
+    },
+    "confidence_score": {"type": "number", "minimum": 0, "maximum": 1},
+    "confidence_band": {
+      "type": "string",
+      "enum": ["very_low", "low", "medium", "high", "very_high"]
+    },
+    "method": {"type": "string"},
+    "source_name": {"type": "string"},
+    "source_version": {"type": "string"},
+    "matched_marker_count": {"type": "integer", "minimum": 0},
+    "explanation": {"type": "string", "minLength": 1},
+    "limitations": {"type": "string", "minLength": 1},
+    "next_steps": {"type": "string", "minLength": 1},
+    "debug": {"type": "object"}
+  }
+}

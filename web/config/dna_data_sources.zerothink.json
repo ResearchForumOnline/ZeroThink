@@ -1,0 +1,282 @@
+{
+  "pack_version": "0.1.0",
+  "created_for": "ZeroThink DNA Lab v2",
+  "storage_policy": {
+    "source_dir": "data/sources",
+    "cache_dir": "data/cache",
+    "pack_dir": "data/packs",
+    "commit_downloads_to_git": false
+  },
+  "sources": [
+    {
+      "id": "clinvar_variant_summary",
+      "name": "ClinVar Variant Summary",
+      "priority": "must_have",
+      "pack": "health_core",
+      "use": "clinical-significance evidence cards by rsID / gene / condition",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/tab_delimited/variant_summary.txt.gz",
+      "license_note": "NCBI public data; cite ClinVar/NCBI; verify current use terms.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "clinvar_vcf_grch37",
+      "name": "ClinVar VCF GRCh37",
+      "priority": "must_have",
+      "pack": "health_core",
+      "use": "position/build-specific ClinVar annotation",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh37/clinvar.vcf.gz",
+      "license_note": "NCBI public data; cite ClinVar/NCBI; verify current use terms.",
+      "runtime_use": "optional_tabix_or_import"
+    },
+    {
+      "id": "clinvar_vcf_grch38",
+      "name": "ClinVar VCF GRCh38",
+      "priority": "must_have",
+      "pack": "health_core",
+      "use": "position/build-specific ClinVar annotation",
+      "url": "https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/clinvar.vcf.gz",
+      "license_note": "NCBI public data; cite ClinVar/NCBI; verify current use terms.",
+      "runtime_use": "optional_tabix_or_import"
+    },
+    {
+      "id": "gwas_catalog_associations",
+      "name": "NHGRI-EBI GWAS Catalog associations",
+      "priority": "must_have",
+      "pack": "health_research",
+      "use": "research-only trait association evidence cards",
+      "url": "https://www.ebi.ac.uk/gwas/api/search/downloads/full",
+      "license_note": "EMBL-EBI/GWAS Catalog terms; cite GWAS Catalog and source studies.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "pharmgkb_clinical_annotations",
+      "name": "PharmGKB clinical annotations",
+      "priority": "must_have",
+      "pack": "pharmacogenomics",
+      "use": "variant-drug clinical annotation summaries",
+      "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations.zip",
+      "license_note": "ClinPGx/PharmGKB data usage policy; CC BY-SA 4.0 per API page; verify before commercial use.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "pharmgkb_clinical_annotations_loe12",
+      "name": "PharmGKB clinical annotations LOE 1-2",
+      "priority": "must_have",
+      "pack": "pharmacogenomics",
+      "use": "higher evidence pharmacogenomics cards",
+      "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalAnnotations_LOE1-2.zip",
+      "license_note": "ClinPGx/PharmGKB data usage policy; verify before commercial use.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "pharmgkb_clinical_variants",
+      "name": "PharmGKB clinical variants",
+      "priority": "must_have",
+      "pack": "pharmacogenomics",
+      "use": "variant-drug pairs and evidence levels",
+      "url": "https://api.pharmgkb.org/v1/download/file/data/clinicalVariants.zip",
+      "license_note": "ClinPGx/PharmGKB data usage policy; verify before commercial use.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "pharmgkb_guideline_annotations",
+      "name": "PharmGKB / CPIC guideline annotations",
+      "priority": "high",
+      "pack": "pharmacogenomics",
+      "use": "guideline-level drug/gene summaries without dosage advice",
+      "url": "https://api.pharmgkb.org/v1/download/file/data/guidelineAnnotations.json.zip",
+      "license_note": "ClinPGx/PharmGKB/CPIC usage policy; do not turn into treatment instructions.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "hpo_obo",
+      "name": "Human Phenotype Ontology",
+      "priority": "must_have",
+      "pack": "ontology_core",
+      "use": "standard phenotype names and health-card normalization",
+      "url": "https://purl.obolibrary.org/obo/hp.obo",
+      "license_note": "HPO/OBO terms; cite HPO.",
+      "runtime_use": "local_ontology"
+    },
+    {
+      "id": "mondo_obo",
+      "name": "Mondo Disease Ontology",
+      "priority": "high",
+      "pack": "ontology_core",
+      "use": "disease-name normalization and cross references",
+      "url": "https://purl.obolibrary.org/obo/mondo.obo",
+      "license_note": "CC BY 4.0 per Mondo docs; cite Mondo/Monarch.",
+      "runtime_use": "local_ontology"
+    },
+    {
+      "id": "ucsc_hg19_to_hg38_chain",
+      "name": "UCSC hg19 to hg38 liftOver chain",
+      "priority": "must_have",
+      "pack": "normalization_core",
+      "use": "coordinate conversion when raw file build is known or inferred",
+      "url": "https://hgdownload.soe.ucsc.edu/goldenPath/hg19/liftOver/hg19ToHg38.over.chain.gz",
+      "license_note": "UCSC genome browser data use terms; cite UCSC where appropriate.",
+      "runtime_use": "local_liftover"
+    },
+    {
+      "id": "1000g_phase3_panel",
+      "name": "1000 Genomes Phase 3 sample panel",
+      "priority": "must_have_for_ancestry",
+      "pack": "ancestry_core",
+      "use": "sample-to-population map for building local ancestry reference markers",
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/integrated_call_samples_v3.20130502.ALL.panel",
+      "license_note": "IGSR/1000 Genomes open data; cite source publications; respect data reuse statements.",
+      "runtime_use": "builder_only"
+    },
+    {
+      "id": "1000g_phase3_chr22_test",
+      "name": "1000 Genomes Phase 3 chromosome 22 VCF test file",
+      "priority": "must_have_for_ancestry_test",
+      "pack": "ancestry_core",
+      "use": "smallest chromosome test build for ancestry reference builder",
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz",
+      "license_note": "IGSR/1000 Genomes open data; large file; builder only.",
+      "runtime_use": "builder_only"
+    },
+    {
+      "id": "1000g_phase3_chr22_test_index",
+      "name": "1000 Genomes Phase 3 chromosome 22 VCF index",
+      "priority": "must_have_for_ancestry_test",
+      "pack": "ancestry_core",
+      "use": "tabix index for chr22 VCF",
+      "url": "https://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz.tbi",
+      "license_note": "IGSR/1000 Genomes open data; builder only.",
+      "runtime_use": "builder_only"
+    },
+    {
+      "id": "hgdp_igsr",
+      "name": "HGDP via IGSR",
+      "priority": "high_for_ancestry",
+      "pack": "ancestry_expanded",
+      "use": "expanded population reference panel beyond 1000G",
+      "url": "https://www.internationalgenome.org/data-portal/data-collection/HGDP/",
+      "license_note": "Check HGDP/IGSR reuse policy and cite source paper.",
+      "runtime_use": "builder_only_manual"
+    },
+    {
+      "id": "gnomad_downloads",
+      "name": "gnomAD downloads",
+      "priority": "high_for_frequency_context",
+      "pack": "frequency_context",
+      "use": "population allele frequency context, not identity classification",
+      "url": "https://gnomad.broadinstitute.org/downloads",
+      "license_note": "Verify gnomAD terms; large files; create reduced local pack only.",
+      "runtime_use": "builder_only_manual"
+    },
+    {
+      "id": "gnomad_asj_specialist_frequency",
+      "name": "gnomAD ASJ / NFE / MID specialist frequency context",
+      "priority": "high_for_jewish_diaspora_context",
+      "pack": "ancestry_core",
+      "use": "optional Ashkenazi Jewish diaspora frequency lane with European, Middle Eastern, African, East Asian, South Asian, and Americas controls",
+      "url": "https://gnomad.broadinstitute.org/downloads",
+      "license_note": "gnomAD public data; cite gnomAD and respect current use terms. Frequency context only, not identity, religion, or community membership.",
+      "runtime_use": "builder_only_reduce_to_sqlite"
+    },
+    {
+      "id": "ncbi_alfa",
+      "name": "NCBI ALFA allele frequencies",
+      "priority": "high_for_frequency_context",
+      "pack": "frequency_context",
+      "use": "open allele frequency context from dbGaP aggregated unrestricted studies",
+      "url": "https://www.ncbi.nlm.nih.gov/snp/docs/gsr/alfa/",
+      "license_note": "NCBI public data; verify current use terms and QC limitations.",
+      "runtime_use": "builder_only_manual"
+    },
+    {
+      "id": "aadr_ancient_public_genotypes",
+      "name": "Allen Ancient DNA Resource public ancient genotype layer",
+      "priority": "high_for_ancient_grave_matching",
+      "pack": "ancient_graves",
+      "use": "public ancient sample / grave site affinity scans by rsID genotype overlap, with site, culture, date, and map metadata",
+      "url": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/FFIDCW",
+      "license_note": "Public ancient DNA resource; cite AADR/source publications; use as affinity only, not descent or identity proof.",
+      "runtime_use": "builder_only_reduce_to_sqlite"
+    },
+    {
+      "id": "amtdb_ancient_mtdna_context",
+      "name": "AmtDB ancient mitochondrial DNA context",
+      "priority": "optional_for_ancient_mtdna_context",
+      "pack": "ancient_graves",
+      "use": "optional ancient mtDNA/site/haplogroup context when enough mitochondrial markers exist",
+      "url": "https://amtdb.org/",
+      "license_note": "Verify current AmtDB reuse and citation terms; mtDNA context only, not whole-ancestry proof.",
+      "runtime_use": "builder_only_optional"
+    },
+    {
+      "id": "yhaplo",
+      "name": "yhaplo Y-DNA haplogroup caller",
+      "priority": "optional_for_lineage",
+      "pack": "haplogroup_core",
+      "use": "Y-chromosome haplogroup support when enough Y SNPs exist",
+      "url": "https://github.com/23andMe/yhaplo",
+      "license_note": "Check repo license; use locally; do not overclaim lineage.",
+      "runtime_use": "local_tool"
+    },
+    {
+      "id": "haplogrep3",
+      "name": "HaploGrep 3 / PhyloTree mtDNA classification",
+      "priority": "optional_for_lineage",
+      "pack": "haplogroup_core",
+      "use": "mtDNA haplogroup support when enough mitochondrial markers exist",
+      "url": "https://haplogrep.i-med.ac.at/",
+      "license_note": "Check software/database licenses and cite HaploGrep/PhyloTree.",
+      "runtime_use": "local_tool_or_manual"
+    },
+    {
+      "id": "mitomap",
+      "name": "MITOMAP resources",
+      "priority": "optional_for_mt_health",
+      "pack": "mt_core",
+      "use": "mitochondrial variant context",
+      "url": "https://www.mitomap.org/MITOMAP/resources",
+      "license_note": "Check MITOMAP use and citation requirements.",
+      "runtime_use": "local_sqlite_index"
+    },
+    {
+      "id": "gedcom7_spec",
+      "name": "GEDCOM 7 specification",
+      "priority": "must_have_for_lineage",
+      "pack": "lineage_core",
+      "use": "family tree import format support",
+      "url": "https://gedcom.io/specifications/FamilySearchGEDCOMv7.pdf",
+      "license_note": "Specification reference; user-provided GEDCOM remains private.",
+      "runtime_use": "parser_spec"
+    },
+    {
+      "id": "wikidata_filtered_lineage",
+      "name": "Wikidata filtered lineage graph",
+      "priority": "must_have_for_royal_lineage",
+      "pack": "lineage_core",
+      "use": "public historical person graph with parent edges, titles, dates, places",
+      "url": "https://www.wikidata.org/wiki/Wikidata:Database_download",
+      "license_note": "Wikidata structured data is CC0; cite Wikidata and preserve source QIDs.",
+      "runtime_use": "filtered_local_graph"
+    },
+    {
+      "id": "opentargets_platform",
+      "name": "Open Targets Platform downloads",
+      "priority": "optional_health_research",
+      "pack": "gene_disease_context",
+      "use": "gene/disease/target context; not direct diagnosis",
+      "url": "https://platform.opentargets.org/downloads",
+      "license_note": "Verify Open Targets terms and cite sources.",
+      "runtime_use": "local_context_index"
+    },
+    {
+      "id": "snpedia_optional",
+      "name": "SNPedia optional research layer",
+      "priority": "optional_noncommercial_only",
+      "pack": "research_optional",
+      "use": "consumer-genomics commentary layer; disabled by default",
+      "url": "https://bots.snpedia.com/index.php/SNPedia:FAQ",
+      "license_note": "CC BY-NC-SA; noncommercial/share-alike restrictions; do not enable by default for commercial app.",
+      "runtime_use": "manual_optional"
+    }
+  ]
+}

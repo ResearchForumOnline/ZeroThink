@@ -1,4 +1,33 @@
-# ZeroThink Local
+# ZeroThink — DNA Lab and Research Workbench
+
+**The original full PHP ZeroThink application and DNA Lab v1.7.1 are now restored
+in [`web/`](web/README.md).** The Node engine described below is a separate
+companion; the previous public repository did not include the full DNA Lab.
+
+From `web`, with PHP 8.2+ installed (SQLite3 enabled for reference packs):
+
+```console
+php -d upload_max_filesize=32M -d post_max_size=160M -d memory_limit=1024M -S 127.0.0.1:8787 local-router.php
+```
+
+Open **http://127.0.0.1:8787/dna**. The actual DNA interface now runs locally
+without MySQL, login or a subscription. The restored source includes raw DNA/VCF
+parsing, quality/build/orientation checks, ZDNA-MAP scoring, reference ancestry,
+ancient origins, traits, lineage evidence, DNA Sound, portrait tools and exports,
+plus the original research studio, API vault and account-backed web source.
+
+**Private databases, raw DNA, accounts, credentials, runtime vaults and downloaded
+reference/model files are excluded.** Licensed reference packs install separately;
+missing packs remain unavailable. The full account-backed hosted application needs
+separate configuration and review. See [full setup and limits](web/README.md),
+[restoration provenance](docs/FULL_APPLICATION_RESTORATION.md), and
+[third-party licenses](web/THIRD_PARTY_NOTICES.md). Original project source is
+Apache-2.0 except individually licensed components such as the GPL Python worker.
+
+Verify with `npm run check` and `python tools/check_web_source.py --php php`.
+The original companion guide is preserved in [docs/LOCAL_ENGINE.md](docs/LOCAL_ENGINE.md).
+
+## ZeroThink Local companion
 
 **Your research workspace, on your computer or your own server.**
 

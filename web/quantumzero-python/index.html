@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuantumZero Agent Python</title>
+<meta name="description" content="Download the QuantumZero Agent Python companion for Groq + IonQ quantum-informed research, mission tasks, and optional Piper voice.">
+<style>
+:root{--bg:#020403;--panel:#07110f;--line:#174d3a;--text:#eafff6;--muted:#9fb9b0;--green:#00ff91;--cyan:#68f7ff;--gold:#ffd36f}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(circle at 12% 0%,rgba(0,255,145,.18),transparent 30rem),radial-gradient(circle at 82% 10%,rgba(104,247,255,.13),transparent 26rem),linear-gradient(180deg,#010302,#06110f);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.65}
+.wrap{width:min(1080px,calc(100% - 28px));margin:0 auto;padding:42px 0 70px}
+.hero,.card{border:1px solid rgba(108,255,202,.18);background:rgba(3,12,10,.76);box-shadow:0 28px 100px rgba(0,0,0,.38);border-radius:28px}
+.hero{padding:30px;margin-bottom:18px}
+.eyebrow{color:var(--green);letter-spacing:.18em;text-transform:uppercase;font-weight:900;font-size:.78rem}
+h1{font-size:clamp(3rem,9vw,7rem);line-height:.9;letter-spacing:-.08em;margin:10px 0 16px;text-transform:uppercase}
+h2{margin:0 0 12px;color:#baffed;text-transform:uppercase;letter-spacing:.12em;font-size:.9rem}
+p{color:var(--muted);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{padding:20px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+a.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 15px;border-radius:999px;text-decoration:none;color:#02100b;background:linear-gradient(90deg,var(--green),var(--cyan));font-weight:900}
+a.btn.secondary{color:var(--text);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)}
+pre{white-space:pre-wrap;word-break:break-word;background:rgba(0,0,0,.38);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;color:#d2fff0}
+code{color:var(--gold)}
+.note{border-left:3px solid var(--green);padding-left:14px;color:#a7fff0}
+</style>
+</head>
+<body>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">QuantumZero Agent Python</div>
+<h1>Quantum Zero</h1>
+<p class="note">A standalone Python companion for the ZeroThink QuantumZero lane: Groq GPT-OSS 120B reasoning plus real IonQ Quantum Cloud telemetry/job evidence. Real quantum signal in the loop, not a claim that the LLM runs on qubits.</p>
+<div class="btns">
+<a class="btn" href="/quantumzero-python/quantumzero_agent.py" download>Download Python Agent</a>
+<a class="btn secondary" href="/quantumzero">Back To QuantumZero</a>
+<a class="btn secondary" href="/quantumzero-python/README.md">Read README</a>
+</div>
+</section>
+
+<section class="grid">
+<article class="card">
+<h2>Windows One-Line Install</h2>
+<pre>irm https://zerothink.talktoai.org/quantumzero-python/install.ps1 | iex</pre>
+</article>
+<article class="card">
+<h2>Linux / macOS Install</h2>
+<pre>curl -fsSL https://zerothink.talktoai.org/quantumzero-python/install.sh | bash</pre>
+</article>
+<article class="card">
+<h2>Install</h2>
+<pre>python quantumzero_agent.py setup
+python quantumzero_agent.py doctor
+python quantumzero_agent.py missions</pre>
+</article>
+<article class="card">
+<h2>Run A Mission</h2>
+<pre>python quantumzero_agent.py ask --mission evidence
+python quantumzero_agent.py ask --mission entropy --voice
+python quantumzero_agent.py ask "Compare two ideas" --mission ab</pre>
+</article>
+<article class="card">
+<h2>Low Usage</h2>
+<pre>python quantumzero_agent.py ask --mission optimizer --mode telemetry
+python quantumzero_agent.py ask --mission evidence --mode auto --backend simulator --shots 128</pre>
+</article>
+<article class="card">
+<h2>IonQ Tools</h2>
+<pre>python quantumzero_agent.py ionq status
+python quantumzero_agent.py ionq recent
+python quantumzero_agent.py ionq job JOB_ID
+python quantumzero_agent.py ionq results JOB_ID</pre>
+</article>
+</section>
+</main>
+</body>
+</html>

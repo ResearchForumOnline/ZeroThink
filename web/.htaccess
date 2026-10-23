@@ -1,0 +1,70 @@
+RewriteEngine On
+RewriteBase /
+
+# SECURITY: keep runtime data, source packs, internal tooling, and one-off
+# maintenance scripts unreachable even when Apache is contacted directly.
+# Nginx duplicates these controls at the public edge; this layer protects the
+# backend listeners as well.  Files are preserved on disk for audited CLI use.
+RewriteRule ^(?:app|config|data|ops|private|prompts|quantumibm-python|schemas|scripts|sql|storage|uploads|user_memories|vendor)(?:/|$) - [R=404,L,NC]
+RewriteRule ^tools/(?!pdf/?$) - [R=404,L,NC]
+# The documented QuantumZero companion is intentionally public. Allow only
+# its five reviewed download files; all other Python/source paths stay private.
+RewriteRule ^quantumzero-python/(?!$|(?:index\.html|README\.md|install\.ps1|install\.sh|quantumzero_agent\.py)$) - [R=404,L,NC]
+
+# Never execute the reviewed local companion downloads when Apache is reached
+# directly. Nginx serves the same allowlist as static files at the edge.
+<FilesMatch "^(?:README\.md|install\.ps1|install\.sh)$">
+    SetHandler None
+    ForceType text/plain
+</FilesMatch>
+<Files "quantumzero_agent.py">
+    SetHandler None
+    ForceType text/plain
+    <IfModule mod_headers.c>
+        Header set Content-Disposition "attachment; filename=quantumzero_agent.py"
+    </IfModule>
+</Files>
+RewriteRule (^|/)\.(?!well-known(?:/|$)) - [R=404,L,NC]
+RewriteRule ^(?:AGENTS\.md|DNA_DATABASE_RESEARCH\.md|LOCAL_ZERO_AND_ZEROOPS\.md|README_Codex_start_here\.md|SYSTEM_REPORT\.txt|default\.txt|system_prompt\.txt|ui_payload\.txt|composer\.(?:json|lock)|requirements[^/]*)$ - [R=404,L,NC]
+RewriteRule \.(?:zip|tar|tgz|gz|bz2|xz|7z|sql|db|sqlite|sqlite3|pem|key|p12|pfx|jks|keystore|bak|old|dist|log)$ - [R=404,L,NC]
+RewriteRule ^(?:restore_system|restore_grid|run_injection|sanitize|upgrade_db|db_update_share|seed_more|secure_users|clear_cache|flush|inject_master|backup_sovereign|update_models_v2|target_test|test_gate|test_session|probe|agent|chat|api_cortex|api_settings|api_hive|admin_check|admin|check_pro|cortex|auth|google_auth|api_google|auth_callback)\.php$ - [R=404,L,NC]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ROUTING MAP
+RewriteRule ^auth/google/?$ google_login.php [L,QSA]
+RewriteRule ^auth/callback/?$ google_callback.php [L,QSA]
+RewriteRule ^ipn/paypal/?$ paypal_ipn.php [L]
+RewriteRule ^api/cli/?$ api_cli.php [L,QSA]
+RewriteRule ^api/pdf-download/?$ api_pdf_download.php [L,QSA]
+RewriteRule ^api/quantum-ibm/?$ api_quantum_ibm.php [L,QSA]
+RewriteRule ^cli/connect/?$ cli_connect.php [L,QSA]
+RewriteRule ^admin_feedback/?$ admin_feedback.php [L,QSA]
+RewriteRule ^studio/?$ studio.php [L,QSA]
+RewriteRule ^login/?$ index.php [L,QSA]
+RewriteRule ^faq/?$ faq.php [L,QSA]
+RewriteRule ^cli/?$ cli.php [L,QSA]
+RewriteRule ^quantumzero/?$ quantum_zero_chat.php [L,QSA]
+RewriteRule ^quantum-zero/?$ quantum_zero_chat.php [L,QSA]
+RewriteRule ^quantumzero/chat/?$ quantum_zero_chat.php [L,QSA]
+RewriteRule ^quantumlab/?$ quantum_zero.php [L,QSA]
+RewriteRule ^quantum-lab/?$ quantum_zero.php [L,QSA]
+RewriteRule ^zmath/?$ zmath.php [L,QSA]
+RewriteRule ^z-math/?$ zmath.php [L,QSA]
+RewriteRule ^guest/?$ guest.php [L,QSA]
+RewriteRule ^direct/?$ guest.php [L,QSA]
+RewriteRule ^docs/?$ docs.php [L,QSA]
+RewriteRule ^pdf-creator/?$ pdf-creator.php [L,QSA]
+RewriteRule ^tools/pdf/?$ pdf-creator.php [L,QSA]
+RewriteRule ^research-paper-creator/?$ research-paper-creator.php [L,QSA]
+RewriteRule ^paper-creator/?$ research-paper-creator.php [L,QSA]
+RewriteRule ^research/nottingham/?$ nottingham-research.php [L,QSA]
+RewriteRule ^docs/serper-search/?$ docs_serper_search.php [L,QSA]
+RewriteRule ^docs/custom-research-processes/?$ docs_custom_research_processes.php [L,QSA]
+
+# REMOVE .PHP (Fallback)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [L]

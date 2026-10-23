@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ZeroThink DNA Data Pack Manifest",
+  "type": "object",
+  "required": ["source_name", "source_url", "downloaded_at", "file_hash_sha256", "pack_name", "pack_version"],
+  "properties": {
+    "source_name": {"type": "string"},
+    "source_url": {"type": "string"},
+    "version_or_release": {"type": "string"},
+    "downloaded_at": {"type": "string", "format": "date-time"},
+    "file_hash_sha256": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+    "license_note": {"type": "string"},
+    "imported_row_count": {"type": "integer", "minimum": 0},
+    "pack_name": {"type": "string"},
+    "pack_version": {"type": "string"},
+    "local_path": {"type": "string"},
+    "importer_version": {"type": "string"}
+  }
+}

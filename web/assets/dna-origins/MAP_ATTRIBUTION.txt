@@ -1,0 +1,23 @@
+DNA Origins map attribution
+Verified 2026-09-05
+
+The origins interface reuses the existing ZeroThink asset:
+  /assets/maps/world-countries-110m.json
+
+Its SHA-256 is identical to countries-110m.json from world-atlas 2.0.2:
+  2516c915867c7baf18ddec727aec46c315541a07cfb3d79a6559b05d5e94eee8
+  https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json
+
+world-atlas is Copyright 2013-2019 Michael Bostock, under the ISC license.
+The complete license is in WORLD-ATLAS-LICENSE.txt alongside this file.
+Project and license:
+  https://github.com/topojson/world-atlas
+  https://github.com/topojson/world-atlas/blob/master/LICENSE
+
+The underlying Natural Earth map data is public domain.
+  https://www.naturalearthdata.com/about/terms-of-use/
+
+Reference points use source-catalog sampling-region coordinates. Point sizes
+are constant and do not encode a person's ancestry contribution or migration.
+The landscape illustrations are separate original assets, not scientific
+reconstructions of individual ancestors.

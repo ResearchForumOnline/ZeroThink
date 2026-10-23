@@ -1,0 +1,664 @@
+{
+    "place_context": {
+        "version": "dna-composition-place-context-v1",
+        "model": "bigsnpr",
+        "available": true,
+        "personal_result": true,
+        "status": "composition_reference_context",
+        "groups": [
+            {
+                "code": "AFR_W",
+                "label": "West Africa",
+                "places": [
+                    {
+                        "label": "Nigeria",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ghana",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Sierra Leone",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ivory Coast",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Liberia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Togo",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The reference is a genetic comparison group whose members have several recorded birthplaces, including West African countries and the Caribbean.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "AFR_S",
+                "label": "Southern Africa",
+                "places": [
+                    {
+                        "label": "Zimbabwe",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Uganda",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "South Africa",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Zambia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Malawi",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Tanzania",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The published Southern Africa label covers this selected comparison group. Its members were not all born in the geographical south of Africa.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "AFR_E",
+                "label": "East Africa",
+                "places": [
+                    {
+                        "label": "Somalia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ethiopia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Sudan",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Eritrea",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "This component uses the retained eastern African reference group, described as Africa (East 1) during source construction.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "AFR_N",
+                "label": "North Africa",
+                "places": [
+                    {
+                        "label": "Algeria",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Morocco",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Egypt",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Libya",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Tunisia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "Egypt is represented within this broader North African reference. The model does not divide this component into separate countries.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "MENA",
+                "label": "Middle East",
+                "places": [
+                    {
+                        "label": "Iraq",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Iran",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Türkiye",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Syria",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The reference group is mainly participants born in Iraq and Iran, with Türkiye and Syria also listed. It is not an Iraqi-versus-Iranian breakdown.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "ASH",
+                "label": "Ashkenazi",
+                "places": [],
+                "plain": "This is an explicitly defined Ashkenazi diaspora reference group, selected by its genetic position in the study. Members were born in several countries; those birthplaces are not separate ancestry components. It is not a test of religion, citizenship or community membership.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EUR_IT",
+                "label": "Italy",
+                "places": [
+                    {
+                        "label": "Italy",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The author selected a reference group named for Italy. Its fitted share describes this genetic reference, not legal nationality or a documented Italian ancestor.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EUR_E",
+                "label": "East Europe",
+                "places": [
+                    {
+                        "label": "Romania",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Serbia/Montenegro (source label)",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Bosnia and Herzegovina",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Bulgaria",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Croatia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Hungary",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Italy",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Macedonia (source label)",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Russia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Poland",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ukraine",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Latvia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Germany",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Kazakhstan",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Lithuania",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The author combines northeastern and southeastern European reference coefficients because the groups are close. The listed birthplaces describe the combined reference membership, not separate country results.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EUR_FIN",
+                "label": "Finland",
+                "places": [
+                    {
+                        "label": "Finland",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The published reference combines the selected Finnish UK Biobank group with the 1000 Genomes Finnish population.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EUR_NW",
+                "label": "Northwest Europe",
+                "places": [
+                    {
+                        "label": "United Kingdom",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ireland",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Denmark",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Norway",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Sweden",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Germany",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Netherlands",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Iceland",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The author requires the UK, Irish and Scandinavian reference coefficients to be combined. England, Scotland and Wales are not separate model components. Germany and the Netherlands appear as some Scandinavian-reference members' birthplaces.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EUR_SW",
+                "label": "Southwest Europe",
+                "places": [
+                    {
+                        "label": "Spain",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Portugal",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "France",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Gibraltar",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The reference contains members with these recorded birthplaces. The fitted share does not separately identify Spanish, Portuguese or French ancestry.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "AMR",
+                "label": "South America",
+                "places": [
+                    {
+                        "label": "Colombia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Chile",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Mexico",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Peru",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Ecuador",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Bolivia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Venezuela",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Brazil",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "United Kingdom",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "United States",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Argentina",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The source combines its South America reference with the 1000 Genomes Peruvian population. Some reference members were born elsewhere; this component is not a specific country or Indigenous-community membership test.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "SAS_SL",
+                "label": "Sri Lanka",
+                "places": [
+                    {
+                        "label": "Sri Lanka",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The author defines a Sri Lankan reference group. Related South Asian populations can share variation with it.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "SAS_PK",
+                "label": "Pakistan",
+                "places": [
+                    {
+                        "label": "Pakistan",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "A Pakistani reference group is explicitly included. A fitted share is relative to that study reference and does not resolve every Pakistani population or neighboring origin.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "SAS_BD",
+                "label": "Bangladesh",
+                "places": [
+                    {
+                        "label": "Bangladesh",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The published reference combines a Bangladeshi UK Biobank group with the 1000 Genomes Bengali population.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EAS",
+                "label": "East Asia",
+                "places": [
+                    {
+                        "label": "Hong Kong",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Malaysia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "China",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Singapore",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Vietnam",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Indonesia",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Taiwan",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Thailand",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Brunei",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    },
+                    {
+                        "label": "Macau",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "These recorded birthplaces describe a single broad East Asian reference group, not a list of separately estimated countries.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EAS_JP",
+                "label": "Japan",
+                "places": [
+                    {
+                        "label": "Japan",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "The published reference combines the selected Japanese UK Biobank group with the 1000 Genomes Japanese population.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "code": "EAS_PH",
+                "label": "Philippines",
+                "places": [
+                    {
+                        "label": "Philippines",
+                        "relationship": "Country of birth listed for members of this published reference group; not a separate country percentage or proof of ancestry from that country."
+                    }
+                ],
+                "plain": "A Philippine reference group is included. Its fitted share is a model comparison rather than proof of nationality.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            }
+        ],
+        "unresolved": [
+            {
+                "query": "england",
+                "label": "England / English",
+                "aliases": [
+                    "english"
+                ],
+                "related_component_codes": [
+                    "EUR_NW"
+                ],
+                "status": "merged_reference_group",
+                "answer": "The model reports Northwest Europe, combining UK, Irish and Scandinavian references. It does not estimate an English share separately.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "ireland",
+                "label": "Ireland / Irish",
+                "aliases": [
+                    "irish"
+                ],
+                "related_component_codes": [
+                    "EUR_NW"
+                ],
+                "status": "merged_reference_group",
+                "answer": "Irish reference participants are included, but the author requires Ireland to be merged with the UK and Scandinavia. The chart therefore cannot provide an Irish-only percentage.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "scotland",
+                "label": "Scotland / Scottish",
+                "aliases": [
+                    "scottish",
+                    "scots"
+                ],
+                "related_component_codes": [
+                    "EUR_NW"
+                ],
+                "status": "merged_reference_group",
+                "answer": "There is no separate Scottish component. The combined Northwest European estimate does not divide the UK into Scotland, England or Wales.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "wales",
+                "label": "Wales / Welsh",
+                "aliases": [
+                    "welsh"
+                ],
+                "related_component_codes": [
+                    "EUR_NW"
+                ],
+                "status": "merged_reference_group",
+                "answer": "There is no separate Welsh component. A Northwest European estimate cannot establish or exclude Welsh ancestry.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "egypt",
+                "label": "Egypt / Egyptian",
+                "aliases": [
+                    "egyptian"
+                ],
+                "related_component_codes": [
+                    "AFR_N"
+                ],
+                "status": "regional_reference_only",
+                "answer": "Egyptian-born participants are included in the North African reference, together with several neighboring countries. The model estimates the broader reference share, not an Egyptian percentage.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "israel",
+                "label": "Israel / Israeli",
+                "aliases": [
+                    "israeli"
+                ],
+                "related_component_codes": [],
+                "status": "no_separate_reference_component",
+                "answer": "There is no Israeli component. Some members of the Ashkenazi reference were born in Israel, but that birthplace does not make the Ashkenazi component an Israeli ancestry percentage.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "palestine",
+                "label": "Palestine / Palestinian",
+                "aliases": [
+                    "palestinian"
+                ],
+                "related_component_codes": [],
+                "status": "no_separate_reference_component",
+                "answer": "There is no separate Palestinian component. Middle Eastern or North African fitted shares cannot be relabeled as a Palestinian percentage, and an unresolved label does not exclude family origins there.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "iraq",
+                "label": "Iraq / Iraqi",
+                "aliases": [
+                    "iraqi"
+                ],
+                "related_component_codes": [
+                    "MENA"
+                ],
+                "status": "regional_reference_only",
+                "answer": "Iraqi-born participants are a major part of the Middle Eastern reference, alongside Iranian and other participants. Iraq and Iran are not estimated separately.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "iran",
+                "label": "Iran / Iranian",
+                "aliases": [
+                    "iranian",
+                    "persian"
+                ],
+                "related_component_codes": [
+                    "MENA"
+                ],
+                "status": "regional_reference_only",
+                "answer": "Iranian-born participants are included in the Middle Eastern reference. This is a combined reference estimate rather than an Iranian-only or Persian-identity percentage.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "pakistan",
+                "label": "Pakistan / Pakistani",
+                "aliases": [
+                    "pakistani",
+                    "punjabi",
+                    "punjab"
+                ],
+                "related_component_codes": [
+                    "SAS_PK"
+                ],
+                "status": "included_reference_component",
+                "answer": "The model includes an explicitly named Pakistani reference component. Its estimate describes fit to that study group; it does not separately identify every community in Pakistan or prove nationality.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "ashkenazi",
+                "label": "Ashkenazi Jewish",
+                "aliases": [
+                    "ashkenazi jewish",
+                    "jewish"
+                ],
+                "related_component_codes": [
+                    "ASH"
+                ],
+                "status": "included_reference_component",
+                "answer": "This composition model includes an explicit Ashkenazi diaspora reference component. Its estimated share is a genetic model result, not a test of religious belief or community membership. Small fitted shares can shift between nearby reference groups.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            },
+            {
+                "query": "khazar",
+                "label": "Khazar",
+                "aliases": [
+                    "khazars",
+                    "khazarian"
+                ],
+                "related_component_codes": [],
+                "status": "historical_claim_unsupported",
+                "answer": "No Khazar reference component is defined. An Ashkenazi, Middle Eastern or ancient Steppe/Caucasus comparison cannot be converted into a claim of descent from the historical Khazar polity.",
+                "relationship": "bigsnpr composition-model reference scope; separate from GrafAnc category definitions.",
+                "source_url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex"
+            }
+        ],
+        "boundary": "Places describe this model's published reference membership. Country-of-birth metadata are not separate inherited country shares. A fitted component is relative to the included genetic references; unsupported origins may be redistributed, and unresolved labels do not mean family origins are absent.",
+        "sources": [
+            {
+                "title": "Privé 2022 — reference construction and country-of-birth metadata",
+                "url": "https://raw.githubusercontent.com/privefl/freq-ancestry/main/paper-ancestry-prop-supp.tex",
+                "version": "Supplement to doi:10.1093/bioinformatics/btac348; source checked 2026-09-05"
+            },
+            {
+                "title": "Author tutorial — individual composition and required group merges",
+                "url": "https://privefl.github.io/bigsnpr/articles/ancestry.html",
+                "version": "Published 2022 tutorial"
+            },
+            {
+                "title": "Published aggregate allele frequencies and projection weights",
+                "url": "https://doi.org/10.6084/m9.figshare.16858534.v3",
+                "version": "Figshare16858534.v3 / bigsnpr4bc7f817"
+            }
+        ]
+    },
+    "synthetic_fixture": true,
+    "not_personal_data": true
+}

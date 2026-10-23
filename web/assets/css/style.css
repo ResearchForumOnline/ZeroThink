@@ -1,0 +1,31 @@
+/* SOVEREIGN DARK THEME V69 */
+:root { --bg: #050505; --panel: #0a0a0a; --border: #222; --text: #e0e0e0; --accent: #a855f7; }
+body { background-color: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; margin: 0; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+/* LAYOUT */
+.main-container { display: flex; flex: 1; overflow: hidden; position: relative; }
+.chat-area { flex: 1; display: flex; flex-direction: column; background: var(--bg); position: relative; z-index: 1; }
+/* HEADER */
+.zt-mode-bar { height: 64px; border-bottom: 1px solid var(--border); display: flex; align-items: center; padding: 0 20px; gap: 15px; background: rgba(10,10,10,0.95); backdrop-filter: blur(10px); }
+.zt-select { background: #111; color: #fff; border: 1px solid #333; padding: 8px 12px; border-radius: 6px; font-size: 0.9rem; outline: none; cursor: pointer; min-width: 200px; }
+.zt-select:hover { border-color: var(--accent); }
+/* CHAT */
+#chat-history { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 20px; scroll-behavior: smooth; }
+.message { max-width: 80%; padding: 15px 20px; border-radius: 12px; line-height: 1.6; font-size: 0.95rem; }
+.message.user { align-self: flex-end; background: #1a1a1a; border: 1px solid #333; color: #fff; }
+.message.ai { align-self: flex-start; background: #0f0f0f; border: 1px solid #222; color: #ccc; }
+/* INPUT */
+.input-zone { padding: 20px; background: var(--panel); border-top: 1px solid var(--border); display: flex; gap: 10px; align-items: flex-end; }
+#zero-input { flex: 1; background: #151515; border: 1px solid #333; color: #fff; padding: 15px; border-radius: 12px; resize: none; min-height: 24px; outline: none; font-family: inherit; }
+#zero-input:focus { border-color: var(--accent); }
+.zt-icon-btn { background: none; border: none; color: #666; font-size: 1.2rem; cursor: pointer; padding: 10px; transition: 0.2s; }
+.zt-icon-btn:hover { color: #fff; }
+/* UTILS */
+.zt-pill { background: #111; border: 1px solid #333; color: #888; padding: 5px 12px; border-radius: 20px; font-size: 0.8rem; cursor: pointer; display: flex; align-items: center; gap: 6px; }
+.zt-pill.active { border-color: var(--accent); color: #fff; }
+.zt-dot { width: 6px; height: 6px; border-radius: 50%; background: #444; }
+.zt-pill.active .zt-dot { background: var(--accent); box-shadow: 0 0 8px var(--accent); }
+.zt-divider { width: 1px; height: 24px; background: #333; margin: 0 5px; }
