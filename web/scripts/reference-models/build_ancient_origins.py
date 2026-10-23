@@ -132,5 +132,5 @@ def build(root, output, reference_validation=None):
     print('Public leave-one-out same-label top:',sum(x['source_group']==x['top_group'] for x in loo),'/',len(loo),'(not consumer calibration)')
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser(); p.add_argument('--data-root',type=Path,default=Path(__file__).resolve().parents[1]/'data');p.add_argument('--output',type=Path);p.add_argument('--reference-validation',type=Path)
+    p=argparse.ArgumentParser(); p.add_argument('--data-root',type=Path,required=True);p.add_argument('--output',type=Path);p.add_argument('--reference-validation',type=Path)
     args=p.parse_args();build(args.data_root,args.output or args.data_root/'packs'/'ancient_origins.sqlite',args.reference_validation)

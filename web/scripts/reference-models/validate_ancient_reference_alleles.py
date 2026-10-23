@@ -1,10 +1,11 @@
 """Read-only comparison of new AADR alleles with installed 1000G source alleles."""
+from research_paths import require_path
 import collections,hashlib,json,sqlite3
 from pathlib import Path
 from cyvcf2 import VCF
 
-ROOT=Path('/mnt/data/zerothink/dna-origins-20260905')
-DATA=Path('/home/talkto/zerothink.talktoai.org/data')
+ROOT=require_path('ZDNA_ORIGINS_ROOT')
+DATA=require_path('ZDNA_DATA_ROOT')
 pack=ROOT/'ancient_origins.sqlite'
 con=sqlite3.connect('file:'+str(pack)+'?mode=ro',uri=True)
 anc={(c,p):(r,a) for c,p,r,a in con.execute("SELECT chrom,pos,ref,alt FROM ancient_origin_markers WHERE group_code='WHG'")}
@@ -19,7 +20,7 @@ vcf_status=collections.Counter();vcf_chrom={};all_locus_results=[]
 for chrom in range(1,23):
     loci=sorted((p,pair) for (c,p),pair in anc.items() if c==str(chrom))
     selected=loci
-    directory=Path('/mnt/data/zerothink/dna-upgrade-20260905/public-source-repair') if chrom==21 else DATA/'sources/1000g'
+    directory=require_path('ZDNA_UPGRADE_ROOT') / 'public-source-repair' if chrom==21 else DATA/'sources/1000g'
     v=VCF(str(next(directory.glob('ALL.chr%d.*genotypes.vcf.gz'%chrom))))
     counts=collections.Counter()
     for pos,(ref,alt) in selected:

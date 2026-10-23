@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Compatibility entrypoint. Configure ROOT and optional builder settings exactly
+# as for update_dna_data_packs.sh; this wrapper adds no host or credential defaults.
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+exec bash "$SCRIPT_DIR/update_dna_data_packs.sh" "$@"

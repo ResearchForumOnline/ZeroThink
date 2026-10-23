@@ -80,6 +80,8 @@ function zt_model_catalog(): array
             'models' => [
                 ['id' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M', 'label' => 'OpenZero Ministral3 8B Runtime Agent'],
                 ['id' => 'openzerogemma:latest', 'label' => 'OpenZero Gemma 4 E4B (compatibility)'],
+                ['id' => 'zero-qwen3-q5:latest', 'label' => 'OpenZero Qwen3 8B Q5_K_M (installed alias required)'],
+                ['id' => 'zero-qwen3-f16:latest', 'label' => 'OpenZero Qwen3 8B F16 (installed alias required)'],
             ],
         ],
         'featherless' => [

@@ -6,6 +6,12 @@ DNA parser and evidence engine, ancestry/origin modules, traits, local sound and
 portrait tools, exports, API vault and historical account-backed web interfaces.
 The lightweight Node engine at the repository root is a separate companion.
 
+The follow-up [completeness audit](../docs/FULL_APPLICATION_RESTORATION.md)
+restores surrounding DNA research/evaluation tools that were omitted from the
+initial source export. See [tool provenance and input requirements](docs/DNA_RESEARCH_TOOLS.md)
+and [source inventory](scripts/reference-models/SOURCE_INVENTORY.json). These utilities
+are source, not bundled reference datasets or proof of biological accuracy.
+
 ## Run DNA Lab without a database or account
 
 Install PHP 8.2 or newer, with SQLite3 enabled for reference-pack matching. From

@@ -1,9 +1,10 @@
 """Add already validated HO loci to GRCh37; keep GRCh38 on exact paired bridge."""
+from research_paths import require_path
 import hashlib,json,os,shutil,sqlite3
 from pathlib import Path
 import numpy as np
 os.umask(0o077)
-BASE=Path('/mnt/data/zerothink/dna-country-20260905/science-bigsnpr');OLD=BASE/'bundle';NEW=BASE/'bundle-v2'
+BASE=require_path('ZDNA_COMPOSITION_ROOT');OLD=BASE/'bundle';NEW=BASE/'bundle-v2'
 if NEW.exists():assert not any(NEW.iterdir()), 'Preserve earlier nonempty candidate'
 else:NEW.mkdir(mode=0o700)
 old=np.load(OLD/'weights.npz');ho=np.load(BASE/'evaluation/model-HO-aggregate.npz');assert np.array_equal(old['groups'],ho['groups'])

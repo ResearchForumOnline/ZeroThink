@@ -1,8 +1,9 @@
 """Fetch only the author's CC BY 4.0 aggregate frequencies/loadings into new private staging."""
+from research_paths import require_path
 import hashlib, json, os, time, urllib.request
 from pathlib import Path
 
-BASE = Path('/mnt/data/zerothink/dna-country-20260905/science-bigsnpr')
+BASE = require_path('ZDNA_COMPOSITION_ROOT')
 os.umask(0o077)
 BASE.mkdir(mode=0o700, exist_ok=True)
 SOURCE = BASE / 'source'

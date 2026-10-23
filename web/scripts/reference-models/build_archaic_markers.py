@@ -3,12 +3,13 @@
 This is a variant lookup panel, NOT an individual introgression/percentage model.
 Only public 1000G aggregate SPrime output is used; SGDP Papuan files are excluded.
 """
+from research_paths import require_path
 import csv,hashlib,io,json,sqlite3,subprocess,tarfile,time
 from collections import Counter,defaultdict
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
-STAGE=Path('/mnt/data/zerothink/dna-origins-20260905')
+STAGE=require_path('ZDNA_ORIGINS_ROOT')
 SOURCE=STAGE/'archaic-source'
 OUT=STAGE/'archaic_markers.sqlite'
 VERSION='Browning2018-Sprime-1000G-distinct-tags-v1'

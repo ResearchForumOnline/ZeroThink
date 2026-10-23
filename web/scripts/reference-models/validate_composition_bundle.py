@@ -1,9 +1,12 @@
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Uses evaluate_bigsnpr_composition; see its Prive/Matrix attribution and COPYING.GPL-3.0.
 """Validate the exact final union/paired assets, exporting constructed tests and aggregates only."""
+from research_paths import require_path
 import importlib.util,json,sqlite3,time,hashlib,os
 from pathlib import Path
 import numpy as np
 from evaluate_bigsnpr_composition import fit,summarize
-BASE=Path('/mnt/data/zerothink/dna-country-20260905/science-bigsnpr');B=BASE/'bundle-v2';E=BASE/'evaluation';os.umask(0o077)
+BASE=require_path('ZDNA_COMPOSITION_ROOT');B=BASE/'bundle-v2';E=BASE/'evaluation';os.umask(0o077)
 spec=importlib.util.spec_from_file_location('worker',B/'worker.py');w=importlib.util.module_from_spec(spec);spec.loader.exec_module(w)
 meta=json.loads((B/'model.json').read_text());rng=np.random.default_rng(20260907);start=time.monotonic()
 source=np.load(E/'model-HO-aggregate.npz');public=np.load(E/'public-HO.private.npz');labels=list(public['labels']);calls=public['calls'];HF=source['frequency'];HL=source['loading'];HO=source['loci']

@@ -1,9 +1,10 @@
 """Independently check source row order/bit layout against AADR metadata and hg19."""
+from research_paths import require_path
 import argparse,collections,hashlib,json,sqlite3
 from pathlib import Path
 
 p=argparse.ArgumentParser();p.add_argument('--pack',type=Path);args=p.parse_args()
-root=Path(__file__).resolve().parents[1]/'data'
+root=require_path('ZDNA_ORIGINS_DATA')
 selection=json.loads((root/'ancient_selection.json').read_text())
 n=int(selection['header'][2])
 

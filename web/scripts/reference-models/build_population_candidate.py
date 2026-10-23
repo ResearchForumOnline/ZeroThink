@@ -4,6 +4,7 @@
 Public held-out donors are used only in memory for aggregate diagnostic evaluation.
 They are not raw-DNA test fixtures and no donor genotype rows are logged/exported.
 """
+from research_paths import require_path
 import csv
 import hashlib
 import json
@@ -20,8 +21,8 @@ os.environ['OMP_NUM_THREADS']='1'
 import numpy as np
 from cyvcf2 import VCF
 
-ROOT=Path('/mnt/data/zerothink/dna-upgrade-20260905').resolve()
-DATA=Path('/home/talkto/zerothink.talktoai.org/data').resolve()
+ROOT=require_path('ZDNA_UPGRADE_ROOT').resolve()
+DATA=require_path('ZDNA_DATA_ROOT').resolve()
 ACTIVE=DATA/'packs/ancestry_core.sqlite'
 OUT=ROOT/'ancestry_core.population-balanced-candidate.sqlite'
 REPORT=ROOT/'population_candidate_manifest.json'

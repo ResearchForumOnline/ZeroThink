@@ -1,10 +1,11 @@
 """Build new aggregate runtime bridge from pinned GrafAnc definitions and bigsnpr weights."""
+from research_paths import require_path
 import gzip,hashlib,json,os,sqlite3,shutil,time
 from pathlib import Path
 import numpy as np
 os.umask(0o077)
-BASE=Path('/mnt/data/zerothink/dna-country-20260905/science-bigsnpr');BUNDLE=BASE/'bundle';BUNDLE.mkdir(mode=0o700,exist_ok=False)
-GRAF=Path('/mnt/data/zerothink/dna-customer-20260905/grafanc-prototype/bundle/data/marker_index.sqlite')
+BASE=require_path('ZDNA_COMPOSITION_ROOT');BUNDLE=BASE/'bundle';BUNDLE.mkdir(mode=0o700,exist_ok=False)
+GRAF=require_path('ZDNA_GRAFANC_ROOT') / 'bundle/data/marker_index.sqlite'
 assert hashlib.sha256(GRAF.read_bytes()).hexdigest()=='c3e8272c979a168484fa3469339e8237cec5e49ae11a1157fadf5fb584944917'
 db=sqlite3.connect('file:'+str(GRAF)+'?mode=ro',uri=True);wanted={(str(c),str(p)):(str(p38),r,a,b) for c,p,p38,r,a,b in db.execute('SELECT chrom,pos37,pos38,rsid,ref,alt FROM markers')};db.close()
 frequency=[];loading=[];definitions=[];excluded={};rows=0

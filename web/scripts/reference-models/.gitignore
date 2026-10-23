@@ -1,0 +1,17 @@
+# Local reference inputs, model assets, private evaluations and generated outputs.
+__pycache__/
+*.pyc
+*.csv
+*.tsv
+*.vcf
+*.gz
+*.npy
+*.npz
+*.sqlite
+*.db
+data/
+evaluation/
+results/
+runtime/
+bundle/
+bundle-v2/

@@ -1,13 +1,22 @@
-ZeroThink Local 1.0
+ZeroThink — original application, DNA Lab and Local companion
 Copyright 2026 Shafaet Brady Hussain
 
 Licensed under the Apache License, Version 2.0.
 
-This portable implementation develops the author's earlier ZeroThink concepts:
-evidence-first research processes, deterministic source retrieval, and bounded
-draft, critique and revision orchestration. It was created with coding-assistant
-help. Source provenance and design limitations are recorded in PROVENANCE.json.
+The original PHP application and DNA Lab are restored under web/. They include
+historical hosted account, provider, payment and entitlement integration source,
+with configuration and deployment required by the operator. Restoration scope
+and component provenance are described in docs/FULL_APPLICATION_RESTORATION.md.
 
-This distribution does not contain the old hosted PHP service, private user
-records, credentials, DNA data, payment integration, entitlement service,
-commercial encryption code, or third-party model weights.
+The separate portable Node companion develops the author's earlier ZeroThink
+concepts: evidence-first research processes, deterministic source retrieval, and
+bounded draft, critique and revision orchestration. It was created with
+coding-assistant help. Its historical provenance and design limitations are
+recorded in PROVENANCE.json and docs/LOCAL_ENGINE.md.
+
+This distribution excludes private user records, credentials, personal DNA,
+database rows, runtime storage, downloaded reference/model bundles and vendor
+dependencies. Publishing source does not deploy the previous hosted service.
+Third-party components and individually licensed files retain their own terms;
+see web/THIRD_PARTY_NOTICES.md and component licenses. This notice does not
+relicense separately released noncommercial ZMath code.

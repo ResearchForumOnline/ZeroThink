@@ -4,12 +4,17 @@ The repository Apache-2.0 grant covers the author's original project code. It do
 not replace a third-party license or license datasets, APIs, provider models,
 university marks or dependencies on somebody else's behalf.
 
-- The reference-model `composition_worker.py` states GPL-3.0-or-later and cites
+- The reference-model `composition_worker.py` and
+  `evaluate_bigsnpr_composition.py` state GPL-3.0-or-later and cite
   Florian Prive (2022), DOI `10.1093/bioinformatics/btac348`. Its `near_pd` adaptation
   credits Martin Maechler (2007-2019) and Jens Oehlschlaegel (2007), originally
-  GPL-2.0-or-later. That worker is distributed under GPL-3.0-or-later; see
-  `scripts/reference-models/COPYING.GPL-3.0`. It is an independently invoked Python
-  process; it is not implicitly relicensed Apache-2.0.
+  GPL-2.0-or-later. These files are distributed under GPL-3.0-or-later; see
+  `scripts/reference-models/COPYING.GPL-3.0`. The restored
+  `bigsnpr_additional_checks.py` and `validate_composition_bundle.py` import this
+  GPL evaluator and are also marked GPL-3.0-or-later. Respect the GPL terms for
+  these combined evaluation programs and any derivatives. The application invokes
+  the composition worker as a separate Python process. Neither that arrangement
+  nor this repository's general license relicenses the GPL tools as Apache-2.0.
 - bigsnpr/Matrix implementation source is not vendored here. The source builder
   records its upstream revision, aggregate-data license and reference DOI.
   Separately downloaded frequency/loading datasets retain their source terms.

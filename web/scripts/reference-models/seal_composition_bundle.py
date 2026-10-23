@@ -1,16 +1,13 @@
 """Seal only immutable aggregate/runtime files; never include individual evaluation inputs."""
+from research_paths import require_path
 import hashlib,json,os,urllib.request
 from pathlib import Path
-BASE=Path('/mnt/data/zerothink/dna-country-20260905/science-bigsnpr');B=BASE/'bundle-v2'
+BASE=require_path('ZDNA_COMPOSITION_ROOT');B=BASE/'bundle-v2'
 os.umask(0o077)
-# Avoid a symlink through the root-only construction venv after installation.
-# This changes only our candidate's link, never the system interpreter content.
+# The runtime is prepared separately; sealing never rewrites an interpreter.
 interpreter=B/'runtime/bin/python'
-assert interpreter.is_symlink() and interpreter.resolve()==Path('/usr/bin/python3.9')
-if os.readlink(interpreter)!='/usr/bin/python3.9':
-    replacement=interpreter.with_name('python-direct-system-link')
-    assert not replacement.exists() and not replacement.is_symlink()
-    replacement.symlink_to('/usr/bin/python3.9');os.replace(replacement,interpreter)
+if not interpreter.is_file():
+    raise RuntimeError('Prepare bundle-v2/runtime/bin/python before sealing; use your supported local runtime')
 license_url='https://raw.githubusercontent.com/spdx/license-list-data/main/text/GPL-3.0-or-later.txt'
 with urllib.request.urlopen(license_url,timeout=30) as r:license_text=r.read()
 assert b'GNU GENERAL PUBLIC LICENSE' in license_text and len(license_text)>30000
@@ -37,7 +34,7 @@ NumPy and quadprog dependency licenses are retained inside runtime/site-packages
 No warranty. This is a reference-model estimate, not a verified country or identity test.
 '''
 (B/'NOTICE.txt').write_text(notice)
-graf=Path('/mnt/data/zerothink/dna-customer-20260905/grafanc-prototype/bundle/licenses/GrafAnc-MIT.txt')
+graf=require_path('ZDNA_GRAFANC_ROOT') / 'bundle/licenses/GrafAnc-MIT.txt'
 (B/'GrafAnc-MIT.txt').write_bytes(graf.read_bytes())
 files={}
 for p in sorted(B.rglob('*')):

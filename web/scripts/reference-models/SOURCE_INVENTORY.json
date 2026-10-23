@@ -1,0 +1,3495 @@
+{
+  "schema_version": 1,
+  "scope": "Recognized authored-code extensions under all seven September 5 DNA stage scripts folders; every occurrence retained, byte hashes permit deduplication. Additional owner review scripts audited separately. No data or archive payload included.",
+  "candidate_occurrences": 204,
+  "unique_source_hashes": 132,
+  "candidate_bytes_with_repetition": 1984241,
+  "unique_source_bytes": 1354381,
+  "restored_new_logical_tools": 28,
+  "provenance": [
+    {
+      "destination": "web/scripts/reference-models/audit_public_modern_metadata.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/audit_public_modern_metadata.py",
+      "source_sha256": "e4da2145ab723c06cfa31ee1e48fdd686f37b9ee12f21a72676c5d309589f0be",
+      "source_bytes": 1711,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "6d2ce19f9477dc04ba8bde8e24f7a03d9dc5a93ddf5b61c0477a8b5d1ce78fe6",
+      "destination_bytes": 1692
+    },
+    {
+      "destination": "web/scripts/reference-models/audit_regional_candidate.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/audit_regional_candidate.py",
+      "source_sha256": "69d103861cf78ff5e3ca2cfb56abc173d3b7025c3ef07d8f6dd0548c74c8200f",
+      "source_bytes": 1883,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "69d103861cf78ff5e3ca2cfb56abc173d3b7025c3ef07d8f6dd0548c74c8200f",
+      "destination_bytes": 1883
+    },
+    {
+      "destination": "web/scripts/reference-models/bigsnpr_additional_checks.py",
+      "source": "_dna_country_release_20260905/scripts/bigsnpr_additional_checks.py",
+      "source_sha256": "622ab09b7b3633b48220bf3c8fb641e5311740668ea231db32a2c7fbee62d27b",
+      "source_bytes": 3130,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained",
+        "Explicit GPL-3.0-or-later notice for combined evaluator program"
+      ],
+      "destination_sha256": "055ab0fd7c542a49d4b48de1befecdce84d036232fe943d47bf1c8ba6f1f7760",
+      "destination_bytes": 3251
+    },
+    {
+      "destination": "web/scripts/reference-models/build_ancient_origins.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_ancient_origins.py",
+      "source_sha256": "e8514fcfb054f56ac6cbcedc11f979905a8077eade2d1b83a2c3a9e134c61d7b",
+      "source_bytes": 14669,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "aaf6aad106261b988e1b1ed371086532dd0de9ad39b25851b3ae2e294f578096",
+      "destination_bytes": 14632
+    },
+    {
+      "destination": "web/scripts/reference-models/build_archaic_markers.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_archaic_markers.py",
+      "source_sha256": "bf83a11b76993a19b13c305282653154b1642d1d871f7e3419ebd77c397e979b",
+      "source_bytes": 8772,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "91983a5ebf12d1527f48af7d4d3f5135299fb6abcf3ad19ab00886d869538fdb",
+      "destination_bytes": 8797
+    },
+    {
+      "destination": "web/scripts/reference-models/build_bigsnpr_public_challenge.py",
+      "source": "_dna_country_release_20260905/scripts/build_bigsnpr_public_challenge.py",
+      "source_sha256": "7f1cd7e038a2ff42cdf184d6293deca88bbe871fb480fc34380320c4a394f072",
+      "source_bytes": 4481,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "f0e5ccbe6e106f81094f3bd05dce0b8a3c2e09e665ab5beac3c528f137a758b2",
+      "destination_bytes": 4454
+    },
+    {
+      "destination": "web/scripts/reference-models/build_composition_bridge.py",
+      "source": "_dna_country_release_20260905/scripts/build_composition_bridge.py",
+      "source_sha256": "b577b411e1ec1924ce81e19f36ed0b2bc28727c954d1c8bc87a7b6fab643b6f5",
+      "source_bytes": 6322,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "2dc8445718cd6b83f2589d74af54d04d65e7995ca81849dccb23b227f66b6129",
+      "destination_bytes": 6305
+    },
+    {
+      "destination": "web/scripts/reference-models/build_composition_union.py",
+      "source": "_dna_country_release_20260905/scripts/build_composition_union.py",
+      "source_sha256": "218df747a0cddf84a11a3cc13cef6ecb461571eaad15692beb20e8023583a756",
+      "source_bytes": 3075,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "983783f28654b715061dd2b47ecd03413f66d91ae039f2401b39be50fb2f562a",
+      "destination_bytes": 3088
+    },
+    {
+      "destination": "web/scripts/reference-models/build_discovery_stress_fixture.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_discovery_stress_fixture.py",
+      "source_sha256": "9c4229bd47464b737b538a2ea276e0bff812c84d574cbe7411008287f727619d",
+      "source_bytes": 1103,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "fc37b092f405a28f358f65a3a4fa452944f3b41d03a74daf4f2827953e351cb8",
+      "destination_bytes": 1121
+    },
+    {
+      "destination": "web/scripts/reference-models/build_discovery_traits_fixture.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_discovery_traits_fixture.py",
+      "source_sha256": "bab3db160d6505c9f78c046f1e77fa5a5a7756ad7208fdc333af73db284b1866",
+      "source_bytes": 1345,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "12f4dc2b9f179acbc9e8efac77fd6a88035dcf9b4e02d72f517d600332273020",
+      "destination_bytes": 1383
+    },
+    {
+      "destination": "web/scripts/reference-models/build_grafanc_bundle.py",
+      "source": "_dna_customer_release_20260905/scripts/build_grafanc_bundle.py",
+      "source_sha256": "94102f7503b86a7ec05a761c562edfbe1f570301e8e78d1fe644895c144ece20",
+      "source_bytes": 3897,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "b05a49052f5963e9eae700e3b367ed07916bf57fc9e496dbd72465c108895330",
+      "destination_bytes": 3903
+    },
+    {
+      "destination": "web/scripts/reference-models/build_origins_synthetic_fixture.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_origins_synthetic_fixture.py",
+      "source_sha256": "e96eca9688e4082d2dd8741f0ed49d91570a88d8e149492996581f5418a224ef",
+      "source_bytes": 2177,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "4e91cdad873a7cdd6ea34256942a34d640884d167fd0dd60cfdb81ef881b4e7c",
+      "destination_bytes": 2225
+    },
+    {
+      "destination": "web/scripts/reference-models/build_population_candidate.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_population_candidate.py",
+      "source_sha256": "fc499aeab5de99d99b133b6bdc5e012abdf64d66ddb985d32aed0a0837393cce",
+      "source_bytes": 18723,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "4e93379bd2317af1bff619e03fd2a09d8d34a953fdc5c305c7c5b087a59ef12a",
+      "destination_bytes": 18730
+    },
+    {
+      "destination": "web/scripts/reference-models/build_reference_catalog.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_reference_catalog.py",
+      "source_sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "source_bytes": 4357,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "destination_bytes": 4357
+    },
+    {
+      "destination": "web/scripts/reference-models/build_regional_refs.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/build_regional_refs.py",
+      "source_sha256": "1e032863f3eedd293163e71c14383381451673fd2e096ca43f05e249d35f9511",
+      "source_bytes": 13523,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "1e032863f3eedd293163e71c14383381451673fd2e096ca43f05e249d35f9511",
+      "destination_bytes": 13523
+    },
+    {
+      "destination": "web/scripts/reference-models/check_grafanc_author_regression.py",
+      "source": "_dna_customer_release_20260905/scripts/check_grafanc_author_regression.py",
+      "source_sha256": "440c89831914a831c09b0983a1166d855a5e2d003ec04fdb644240ab3cfe4250",
+      "source_bytes": 3311,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "b84c03b55be150770dec9cd0530efe4a2023012301fc820a0a2ba1d8572d7e67",
+      "destination_bytes": 3317
+    },
+    {
+      "destination": "web/scripts/reference-models/composition_worker.py",
+      "source": "_dna_country_release_20260905/scripts/composition_worker.py",
+      "source_sha256": "d859f5603c921a15eabcad4cecd5449460d55b02691bf556f5857252be5b079c",
+      "source_bytes": 4847,
+      "change": "existing builder path configuration",
+      "adaptations": [],
+      "destination_sha256": "d859f5603c921a15eabcad4cecd5449460d55b02691bf556f5857252be5b079c",
+      "destination_bytes": 4847
+    },
+    {
+      "destination": "web/scripts/reference-models/create_grafanc_synthetic.py",
+      "source": "_dna_customer_release_20260905/scripts/create_grafanc_synthetic.py",
+      "source_sha256": "f91322135defa85e289302a1822238fe6d2d54cb15d7b866d4c52ee7bd400f99",
+      "source_bytes": 1287,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "54ee3c9341f63bcf6d04b5930f363c1de042db5cfeee48facf59c175fdfabaf3",
+      "destination_bytes": 1293
+    },
+    {
+      "destination": "web/scripts/reference-models/create_regional_synthetic_fixture.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/create_regional_synthetic_fixture.py",
+      "source_sha256": "d592fb55fdf41fe2fc2264224c1041d1a236579456a37b909b72ea45b958d722",
+      "source_bytes": 1174,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "d592fb55fdf41fe2fc2264224c1041d1a236579456a37b909b72ea45b958d722",
+      "destination_bytes": 1174
+    },
+    {
+      "destination": "web/scripts/reference-models/evaluate_ashkenazi_trace.py",
+      "source": "_dna_validation_release_20260905/scripts/evaluate_ashkenazi_trace.py",
+      "source_sha256": "b56dabd85424f87636806f62d54daa6e448492012d00bb2fd30df935fdb7c315",
+      "source_bytes": 8328,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "b56dabd85424f87636806f62d54daa6e448492012d00bb2fd30df935fdb7c315",
+      "destination_bytes": 8328
+    },
+    {
+      "destination": "web/scripts/reference-models/evaluate_bigsnpr_composition.py",
+      "source": "_dna_country_release_20260905/scripts/evaluate_bigsnpr_composition.py",
+      "source_sha256": "22f2b94592bbbdc0d334d130171372d3f9c5a473e3c662a16c12abdfabd7d67c",
+      "source_bytes": 9764,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "b845b67a8fa61603b96759da11d07b13ebf58b58cef8fcbe80fdf5debf37aa93",
+      "destination_bytes": 9777
+    },
+    {
+      "destination": "web/scripts/reference-models/evaluate_grafanc_public.py",
+      "source": "_dna_customer_release_20260905/scripts/evaluate_grafanc_public.py",
+      "source_sha256": "ccbfbb69cf3c4d7ce99c74ec0c81948b5e295f6352464384eb1ce9d657faf8f3",
+      "source_bytes": 5192,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "6a5ac3756002378af32d2d5ac3fb1a736f667e82add7cdebb057b3078f71075e",
+      "destination_bytes": 5158
+    },
+    {
+      "destination": "web/scripts/reference-models/fetch_bigsnpr_reference.py",
+      "source": "_dna_country_release_20260905/scripts/fetch_bigsnpr_reference.py",
+      "source_sha256": "62309b6713da0e867e9c36cf8b9aa6fa9959288a7637fbfb89e9170b4643922e",
+      "source_bytes": 2512,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "b9d98d1e7fe122a98629920c57ea974a5c18c6c53e6b419850b1bee9b0a0cec2",
+      "destination_bytes": 2525
+    },
+    {
+      "destination": "web/scripts/reference-models/fetch_grafanc_public.py",
+      "source": "_dna_customer_release_20260905/scripts/fetch_grafanc_public.py",
+      "source_sha256": "833d45780fbfb5af2cad6c28a56b38f7b5b5fb1470dddd5b4ee3301fc9e06a5d",
+      "source_bytes": 1748,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "3087342f5ff64fa1919bcd708e2ff1baa3a391cb4129c5712ce47f225d58d32e",
+      "destination_bytes": 1775
+    },
+    {
+      "destination": "web/scripts/reference-models/make_myheritage_browser_fixture.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/make_myheritage_browser_fixture.py",
+      "source_sha256": "9240b72cf8a882cae7228dba863c1fbf474d8911553fe6a69b5ea81909bcb921",
+      "source_bytes": 836,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "17468f0498e3d25b47893e288e1083f098ece71c7313fa5ed10eb99e820f4155",
+      "destination_bytes": 874
+    },
+    {
+      "destination": "web/scripts/reference-models/merge_synthetic_ancestry_fixture.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/merge_synthetic_ancestry_fixture.py",
+      "source_sha256": "ff6592ed63ba95e90b7e4fa7083617e7a40ef0d1858f2f9e005ef39cd8695577",
+      "source_bytes": 1377,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "025850d56fb3c8815a3e27c33b220864d13b4dc845940c5ed3c51f9872498d65",
+      "destination_bytes": 1406
+    },
+    {
+      "destination": "web/scripts/reference-models/repair_public_chr21.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/repair_public_chr21.py",
+      "source_sha256": "14ca56683153c4ad41892a6347bead9d859bd22fccaf9620e66ec533ac6111fe",
+      "source_bytes": 2850,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "644d20b94d6312cab4427406f7f9cfb682a52c6275ec220d4635f5ed2b808147",
+      "destination_bytes": 2875
+    },
+    {
+      "destination": "web/scripts/reference-models/seal_archaic_reference.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/seal_archaic_reference.py",
+      "source_sha256": "cbd3c6066c41571385ca7998ef55ed4c3533bc8c3e33f95778c8c12c840153bc",
+      "source_bytes": 1336,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "a1fcf3eb041b8d93bc50c470dc0adef59c2e2e952838db913557946a184b8c52",
+      "destination_bytes": 1361
+    },
+    {
+      "destination": "web/scripts/reference-models/seal_composition_bundle.py",
+      "source": "_dna_country_release_20260905/scripts/seal_composition_bundle.py",
+      "source_sha256": "c1cea117e19c21e50e1a3792407bceeee91a39f97324b0d7211b0685977b3415",
+      "source_bytes": 3557,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained",
+        "Sealing checks a separately prepared runtime and never rewrites a system-interpreter symlink"
+      ],
+      "destination_sha256": "0320b8bbd7c0df6a6e6a3f05debe929032b76fefa77ee21e4c5c9a9e4650847b",
+      "destination_bytes": 3243
+    },
+    {
+      "destination": "web/scripts/reference-models/select_ancient_sources.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/select_ancient_sources.py",
+      "source_sha256": "ca7ba2b53b6913139ef9739e7f6384103c7bf56a30088d37f4c0aa93f49c764b",
+      "source_bytes": 5520,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "9998ab6456dd40d1dcc4925ead54d837b931138a7cc9af04111133a332ee3047",
+      "destination_bytes": 5549
+    },
+    {
+      "destination": "web/scripts/reference-models/select_regional_sources.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/select_regional_sources.py",
+      "source_sha256": "0bc4268f092c703d2a1eb9e0d01a386be2f314b579f5231eb096502a0944e0b1",
+      "source_bytes": 5634,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "0bc4268f092c703d2a1eb9e0d01a386be2f314b579f5231eb096502a0944e0b1",
+      "destination_bytes": 5634
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_ancient_reference_alleles.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_ancient_reference_alleles.py",
+      "source_sha256": "01fcc69ef4dfb147ec29bb3f8e8c8cd7824308d196630b21daa7123ffb926edc",
+      "source_bytes": 3664,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "b4476d5bac80679700b2fcb962a126f72900d18f12a51fe1800c71c287e47254",
+      "destination_bytes": 3660
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_ancient_source_rows.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_ancient_source_rows.py",
+      "source_sha256": "f58f10bef9d7bcc171dd659dcb117e4f734f978d92d12e66bbf88b82d84243f5",
+      "source_bytes": 3342,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "94d3f8f72eee0683399bae25cb50e3edfa31a1a158c0e43e2b640f58b1b11299",
+      "destination_bytes": 3373
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_composition_bundle.py",
+      "source": "_dna_country_release_20260905/scripts/validate_composition_bundle.py",
+      "source_sha256": "df0670c0af77a2ac6e1572547a67338350fdbad10b2fe5624851d83883ebf4ca",
+      "source_bytes": 6144,
+      "change": "existing builder path configuration",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained",
+        "Explicit GPL-3.0-or-later notice for combined evaluator program"
+      ],
+      "destination_sha256": "afb64224bc49ce29ff7adc1f5ba3145fa42c77a28e1e6fdab33e8144b7eff2df",
+      "destination_bytes": 6292
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_population_candidate_subset.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+      "source_sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "source_bytes": 4344,
+      "change": "restored portable source",
+      "adaptations": [],
+      "destination_sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "destination_bytes": 4344
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_regional_hwe.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_hwe.py",
+      "source_sha256": "6ea82cef2475196a1c471e2c44ec874b543a0b9d553cab8162bbd6e240ed1116",
+      "source_bytes": 2272,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained",
+        "Reject invalid matrix shape, dosage values, unobserved samples and insufficient comparison groups before computing diagnostic"
+      ],
+      "destination_sha256": "47bdbef75066d406172fee77246a5c70e0623ac4a6eb323afc2d1b16998dbefc",
+      "destination_bytes": 2948
+    },
+    {
+      "destination": "web/scripts/reference-models/validate_regional_mixture.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_mixture.py",
+      "source_sha256": "0e2368fc55cbdcd48d82023926f8068ac9a87d93d7e5766f944a293d0379100f",
+      "source_bytes": 29731,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "8b113757aadf1ed93ec4e56befdc374e2740477e6ad6cf5625e2d9a3359a8d14",
+      "destination_bytes": 29745
+    },
+    {
+      "destination": "web/scripts/reference-models/verify_final_ancient_pack.py",
+      "source": "_dna_discovery_upgrade_20260905/scripts/verify_final_ancient_pack.py",
+      "source_sha256": "840e3a3d29f81126baca37bd5c835ea24b701d5825b37beb56d62564bb8d7514",
+      "source_bytes": 2629,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "4837eb04570a7c4179203632bee40c4335adda7fd921e81bb1106a749cd2cf33",
+      "destination_bytes": 2654
+    },
+    {
+      "destination": "web/scripts/reference-models/verify_grafanc_forward_reference.py",
+      "source": "_dna_customer_release_20260905/scripts/verify_grafanc_forward_reference.py",
+      "source_sha256": "5e7ab7bb449726c42e815adf36116433ebd816d796b2daae4e45b0b606302109",
+      "source_bytes": 2268,
+      "change": "restored portable source",
+      "adaptations": [
+        "Explicit local configuration; no historical owner path; numerical method retained"
+      ],
+      "destination_sha256": "81df2373540df6ff57b677fb25e2c16e6d6adb20f5aeb672d3523ebca481691e",
+      "destination_bytes": 2249
+    },
+    {
+      "destination": "web/scripts/reference-models/download_regional_ranges.py",
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/download_regional_ranges.py",
+      "source_sha256": "c54b100ceb06f97668de1d8e751e7b86eaa745411c85592e65099154af881bf1",
+      "source_bytes": 3120,
+      "change": "restored portable source",
+      "adaptations": [
+        "Removed owner SSH transport; local-only HTTPS retrieval; exact range and path containment gates"
+      ],
+      "destination_sha256": "1e109276c9d7fc3d29bad89c0c3a37ac13bf42274cff5fdc18cfb9b7b2d3fcde",
+      "destination_bytes": 4496
+    }
+  ],
+  "candidates": [
+    {
+      "source": "_dna_country_release_20260905/scripts/bigsnpr_additional_checks.py",
+      "bytes": 3130,
+      "sha256": "622ab09b7b3633b48220bf3c8fb641e5311740668ea231db32a2c7fbee62d27b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/bigsnpr_additional_checks.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/build_bigsnpr_public_challenge.py",
+      "bytes": 4481,
+      "sha256": "7f1cd7e038a2ff42cdf184d6293deca88bbe871fb480fc34380320c4a394f072",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_bigsnpr_public_challenge.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/build_composition_bridge.py",
+      "bytes": 6322,
+      "sha256": "b577b411e1ec1924ce81e19f36ed0b2bc28727c954d1c8bc87a7b6fab643b6f5",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_composition_bridge.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/build_composition_union.py",
+      "bytes": 3075,
+      "sha256": "218df747a0cddf84a11a3cc13cef6ecb461571eaad15692beb20e8023583a756",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_composition_union.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/check_country_catalog.php",
+      "bytes": 269,
+      "sha256": "b1881b762a6ad3b45be59f139ef2397385fd2a249c0c6bb310b912da5993801c",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/check_country_catalog_fpm.py",
+      "bytes": 1482,
+      "sha256": "3ca8073ba8fb89292b580e28ded7ed91f94225792931eadcb9f02588e7aa0dd5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/check_country_fpm.py",
+      "bytes": 1480,
+      "sha256": "96d2048168babc66eb7c77335cf4901ff3024089f57cdafd47a918c2e87b0048",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/check_country_worker.php",
+      "bytes": 692,
+      "sha256": "17b64cf8932a6bb5c23bc5098ad05b978ce8b2aa51fbfcf68e289b618f989066",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/composition_worker.py",
+      "bytes": 4847,
+      "sha256": "d859f5603c921a15eabcad4cecd5449460d55b02691bf556f5857252be5b079c",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/composition_worker.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/deploy_country.sh",
+      "bytes": 1638,
+      "sha256": "a7591d83332d2ddbd4bfaf55b520bb9174fe3db0ec6f6b57f9b619072887e93a",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/dna-extracted.js",
+      "bytes": 138921,
+      "sha256": "a8170870b4e6074423f7ae9cadb604d613d42b23e85f5e0ac3bd060bd24dddc1",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/evaluate_bigsnpr_composition.py",
+      "bytes": 9764,
+      "sha256": "22f2b94592bbbdc0d334d130171372d3f9c5a473e3c662a16c12abdfabd7d67c",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/evaluate_bigsnpr_composition.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/fetch_bigsnpr_reference.py",
+      "bytes": 2512,
+      "sha256": "62309b6713da0e867e9c36cf8b9aa6fa9959288a7637fbfb89e9170b4643922e",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/fetch_bigsnpr_reference.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/install_composition.sh",
+      "bytes": 1104,
+      "sha256": "ba3bb0d6d6a062ff817a986c54f920d6ba72570259fa1b6beb3599fa7320352c",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/invalidate_country.php",
+      "bytes": 493,
+      "sha256": "f1540b4ee18a7ce0f4f6494cea075d5f396429471a693ca5fe5045b36dbefb44",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/invalidate_country_fpm.py",
+      "bytes": 1492,
+      "sha256": "50801d29d44ae0eea68b54cd14c9afc0317ed9b889ab23a7b570f5879ea63936",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/preview_customer.py",
+      "bytes": 3197,
+      "sha256": "417d7fe56f3a50ea4805bc30546539a645f699f8af1f08f88cecf0e8c5b9d5c5",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/regression_country.sh",
+      "bytes": 702,
+      "sha256": "5603028d70ad3d965032064a6021c15aa9a24707597bd2750ca5c3321af7a900",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/rollback_country.sh",
+      "bytes": 1312,
+      "sha256": "ed65db12a22d3aac5e30cbe1a06acfc4e533e6f91300bf38b45b7632516066fa",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/seal_composition_bundle.py",
+      "bytes": 3557,
+      "sha256": "c1cea117e19c21e50e1a3792407bceeee91a39f97324b0d7211b0685977b3415",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/seal_composition_bundle.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/setup_country_fpm_qa.sh",
+      "bytes": 1028,
+      "sha256": "9512ff1b7b74d14c6ba437a5034787c5f328079f15110195ad0d16a28933a0bf",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/setup_country_stage.sh",
+      "bytes": 2170,
+      "sha256": "38c09e44c0e9e685f8fc195db53842d51c5ddfc3ae1ff6f16d731f2220bf43d9",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/test_ancestry.cjs",
+      "bytes": 11365,
+      "sha256": "5c715e9403bacb1a380862eb44734e92f7762d31af511a0a8540cbf6250ec6e4",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_ancestry.cjs"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/test_country.cjs",
+      "bytes": 12995,
+      "sha256": "de3ff6870d23c9a3f2a14493621115e2d21b0d9460105eafeafe34d183a9b958",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_country.cjs"
+      ]
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/test_customer.cjs",
+      "bytes": 11756,
+      "sha256": "95a4258e3da1acf435521b2449824e4fd2a6d111d4bc29ac0443eeec0b7dfe41",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_customer.cjs"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/test_discovery.cjs",
+      "bytes": 11256,
+      "sha256": "26e54e989b2445b0c8b98b957a0538f1200f7e7169925eb0534b75cf4df788df",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_discovery.cjs"
+      ]
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/validate_composition_bundle.py",
+      "bytes": 6144,
+      "sha256": "df0670c0af77a2ac6e1572547a67338350fdbad10b2fe5624851d83883ebf4ca",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_composition_bundle.py"
+    },
+    {
+      "source": "_dna_country_release_20260905/scripts/verify_interface.py",
+      "bytes": 4787,
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/build_grafanc_bundle.py",
+      "bytes": 3897,
+      "sha256": "94102f7503b86a7ec05a761c562edfbe1f570301e8e78d1fe644895c144ece20",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_grafanc_bundle.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/build_grafanc_isolated.sh",
+      "bytes": 779,
+      "sha256": "868d23fd8c99a78c2f7dd79d4531a16bcf9979da64ca6b70aa01713e3fd741da",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/check_customer_fpm.py",
+      "bytes": 1480,
+      "sha256": "56d28486f663b75947d333bc1cfd700bace5499809ffdb4a54064e22b205ff65",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/check_customer_worker.sh",
+      "bytes": 790,
+      "sha256": "4643e644a0edb605bf0babc135791063458c4d5630b3bf148cf4f35e9c000382",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/check_grafanc_author_regression.py",
+      "bytes": 3311,
+      "sha256": "440c89831914a831c09b0983a1166d855a5e2d003ec04fdb644240ab3cfe4250",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/check_grafanc_author_regression.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/create_grafanc_synthetic.py",
+      "bytes": 1287,
+      "sha256": "f91322135defa85e289302a1822238fe6d2d54cb15d7b866d4c52ee7bd400f99",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/create_grafanc_synthetic.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/deploy_customer.sh",
+      "bytes": 1664,
+      "sha256": "2f2b1adbbf4ba5f5149fae2ba0b4a44a84a72f3481e8d01e9f16b7c5e720c6d7",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/dna-extracted.js",
+      "bytes": 138007,
+      "sha256": "21599942d8a6f32097bfa4dc46605cf1f7e58a7db0d2aafa1cc82aeff5687a35",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/evaluate_grafanc_public.py",
+      "bytes": 5192,
+      "sha256": "ccbfbb69cf3c4d7ce99c74ec0c81948b5e295f6352464384eb1ce9d657faf8f3",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/evaluate_grafanc_public.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/fetch_grafanc_public.py",
+      "bytes": 1748,
+      "sha256": "833d45780fbfb5af2cad6c28a56b38f7b5b5fb1470dddd5b4ee3301fc9e06a5d",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/fetch_grafanc_public.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/install_grafanc_bundle.sh",
+      "bytes": 1230,
+      "sha256": "621394a934347ada1eeeddd88c1b5b1b452da34b94421377bc740a2f266fa660",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/invalidate_customer.php",
+      "bytes": 573,
+      "sha256": "e3403dc3a1b4066439bd280dfcd4c7c7ee6188bb511b743f08d043ceb14851f0",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/preview_customer.py",
+      "bytes": 2414,
+      "sha256": "e901e9482e65d51e94937ec69fd50569309aa99ab92cfa722096ff01fff3eca8",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/rollback_customer.sh",
+      "bytes": 1257,
+      "sha256": "da6a1b6efbfbb78ab401621baacef66f5ac1ce6ece0a228a4d66b49aa7dab645",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/setup_customer_stage.sh",
+      "bytes": 1805,
+      "sha256": "765e0dc607c37532e85a08d85bb10f90bba6105a3386d6983d06b6a0d8351885",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/test_ancestry.cjs",
+      "bytes": 11365,
+      "sha256": "5c715e9403bacb1a380862eb44734e92f7762d31af511a0a8540cbf6250ec6e4",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_ancestry.cjs"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/test_customer.cjs",
+      "bytes": 11756,
+      "sha256": "95a4258e3da1acf435521b2449824e4fd2a6d111d4bc29ac0443eeec0b7dfe41",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_customer.cjs"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/test_customer_stage.sh",
+      "bytes": 657,
+      "sha256": "d4e6c24caf5d207e0f1fa7407c07607965a6cbdca9e80de14b88d7a884bc4045",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/test_discovery.cjs",
+      "bytes": 11256,
+      "sha256": "26e54e989b2445b0c8b98b957a0538f1200f7e7169925eb0534b75cf4df788df",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_discovery.cjs"
+      ]
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/test_interface.cjs",
+      "bytes": 12706,
+      "sha256": "2d24ed5415e7381646073b8127205f0f2c509c04d58f7a41c32c180f186f37e7",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/verify_grafanc_forward_reference.py",
+      "bytes": 2268,
+      "sha256": "5e7ab7bb449726c42e815adf36116433ebd816d796b2daae4e45b0b606302109",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/verify_grafanc_forward_reference.py"
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/verify_interface.py",
+      "bytes": 4787,
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/activate_expanded_release.sh",
+      "bytes": 2470,
+      "sha256": "8fad8d6e571cdd7c086c3092352233fb152f9516890333f38e2b41b45ec0515c",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/audit_panels.py",
+      "bytes": 1391,
+      "sha256": "f0eeb323479019a1b564d5b819c57364b9c221ef4fd1c0892c64eec6d99d7bd0",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_ancestry_reference.py",
+      "bytes": 30047,
+      "sha256": "28a096b1795dea8f8fefe9861c692f68672f0427ad9c9964f36019295b49482b",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/build_ancestry_reference.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_ancient_origins.py",
+      "bytes": 14669,
+      "sha256": "e8514fcfb054f56ac6cbcedc11f979905a8077eade2d1b83a2c3a9e134c61d7b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_ancient_origins.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_ancient_origins_v1.py",
+      "bytes": 13245,
+      "sha256": "406ef969474cecb5a8a5620cf8f215a1e2b7ecfd340df0d056ce78c08bd3c879",
+      "decision": "obsolete_builder_revision",
+      "public_path": "web/scripts/reference-models/build_ancient_origins.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_archaic_markers.py",
+      "bytes": 8772,
+      "sha256": "bf83a11b76993a19b13c305282653154b1642d1d871f7e3419ebd77c397e979b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_archaic_markers.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_discovery_stress_fixture.py",
+      "bytes": 1103,
+      "sha256": "9c4229bd47464b737b538a2ea276e0bff812c84d574cbe7411008287f727619d",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_discovery_stress_fixture.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_discovery_traits_fixture.py",
+      "bytes": 1345,
+      "sha256": "bab3db160d6505c9f78c046f1e77fa5a5a7756ad7208fdc333af73db284b1866",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_discovery_traits_fixture.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_discovery_ui.py",
+      "bytes": 5075,
+      "sha256": "2c4cdec4e3f5f0230125248f0cefca4bca1a38cda473b7a4a5a9a1b434d1846c",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_origins_synthetic_fixture.py",
+      "bytes": 2177,
+      "sha256": "e96eca9688e4082d2dd8741f0ed49d91570a88d8e149492996581f5418a224ef",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_origins_synthetic_fixture.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_origins_ui.py",
+      "bytes": 7903,
+      "sha256": "4f98b852e2726d3abd8a91ad4ea795b4ea7634365238547de98f532016b3ff89",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_population_candidate.py",
+      "bytes": 18723,
+      "sha256": "fc499aeab5de99d99b133b6bdc5e012abdf64d66ddb985d32aed0a0837393cce",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_population_candidate.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/build_reference_catalog.py",
+      "bytes": 4357,
+      "sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/build_reference_catalog.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/create_rollback.sh",
+      "bytes": 826,
+      "sha256": "1bd4f1b9b671d14c294cc9759e5ecbb7f4fd506bbbdedbf34fc03faa92edf77e",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_discovery_release.sh",
+      "bytes": 1536,
+      "sha256": "965dcbfa03ccb02500540542f2bd5278bfcf60d3597c27492b3db567cbb76a8b",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_final_library.sh",
+      "bytes": 913,
+      "sha256": "388593f261f2c1be76d4e53e6ef2d4ca2b2f73d81883e60a69e6c5da1a6432c9",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_myheritage_header_fix.sh",
+      "bytes": 1145,
+      "sha256": "77b87db2076da259fff43921ed5d810af750c49a8cb2807a4ce662d94d2b9304",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_origins_release.sh",
+      "bytes": 1737,
+      "sha256": "5b9ac2a3d2295f52bc6f3617d806400de4878681640d083721dd0b971b846518",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_origins_report_polish.sh",
+      "bytes": 1293,
+      "sha256": "a40ecd755fadfc6ecc5544742ea5778954d49f52e1f4d68f5ab1d507e823faf4",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/deploy_runtime.sh",
+      "bytes": 1092,
+      "sha256": "67ea29e7d1e315eb85165a4ecaeb76dadba222a134e03b0ba7feaea9658aa6de",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/dna-extracted.js",
+      "bytes": 138781,
+      "sha256": "557c5586dd56deea1096759696cd866d3356cc91387dd0f0ba955542b1eb9948",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/download_ancient_ranges.ps1",
+      "bytes": 2760,
+      "sha256": "4d7eb4d68c23e3762f98bb30155306e4eee87afc21e5b5f4856143fa75e5225e",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/download_archaic_reference.py",
+      "bytes": 1216,
+      "sha256": "5ceba4e55e14de6ac6cb9c7adc71e88a31cc7deacff85b853d7e758a87cf7850",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/inspect_archaic_source.py",
+      "bytes": 970,
+      "sha256": "3c988f8176a5fc7ef88397b27378d957d93e4cc7adecbdcab5ad7c1cf67efffb",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/inspect_health_indexes.py",
+      "bytes": 518,
+      "sha256": "4ddb475782f25c13fc587618b87941f67d4088a40dc949e0334aae441bafb688",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/interface_evidence.js",
+      "bytes": 17889,
+      "sha256": "d63707beaa81d772f679e7c51017726538618c92bf2e39a912eac7f4d18e98e7",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/make_myheritage_browser_fixture.py",
+      "bytes": 836,
+      "sha256": "9240b72cf8a882cae7228dba863c1fbf474d8911553fe6a69b5ea81909bcb921",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/make_myheritage_browser_fixture.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/make_synthetic_fixture.py",
+      "bytes": 972,
+      "sha256": "fa12d0aec9fa3c1b8ff442a2abefa890efed0266117855dd1056575344af6848",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/optimize_sonic.ps1",
+      "bytes": 4564,
+      "sha256": "28b1dc712f29a5154a4c1ec95b821aac64d2626338e145b18ec55455f526ff01",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/origins-ui.js",
+      "bytes": 28444,
+      "sha256": "14bded81d00972e3472925d136de61417cb620882f2b3fe817dcb2aca825ba52",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/preview-check.js",
+      "bytes": 29,
+      "sha256": "464ca0537a1af0be203b2bfd391764f1259f2b93b70d16b794e7472b03ada71f",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/preview_discovery_ui.py",
+      "bytes": 2662,
+      "sha256": "d49789f5ac1d52d7a51bb8e1e91c12d6e68e5b0ed0d2d249730f845340381320",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/preview_origins_ui.py",
+      "bytes": 6024,
+      "sha256": "af0f8e46c4fc271acc11b0fadbe19da15b405a4986ed40e7853ec9e9dc36c495",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/probe_ancient_sources.py",
+      "bytes": 2746,
+      "sha256": "b345d4dc6e5a27570ea1d030ff4addc014bb84456087e7f268f7461bf1a9c5eb",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/probe_candidate.py",
+      "bytes": 1231,
+      "sha256": "c87e2d8ce183a7c6c6a4e157fa72189aa15c490ed86106550289880ca6fbf25d",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/repair_public_chr21.py",
+      "bytes": 2850,
+      "sha256": "14ca56683153c4ad41892a6347bead9d859bd22fccaf9620e66ec533ac6111fe",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/repair_public_chr21.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/rollback_discovery_release.sh",
+      "bytes": 1014,
+      "sha256": "8f9670ddc4940c1b977e05545e67296b8676651b346694dc0c7d15a43bbc33f9",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/rollback_expanded_release.sh",
+      "bytes": 1086,
+      "sha256": "341d1e6f5d8ca85176291444dae567e0c2545fc30d6eeba0a0ea4b8ad3b37110",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/rollback_origins_release.sh",
+      "bytes": 1076,
+      "sha256": "8bf2a34316be8910166fea1970c0a3cb9d51367d0f20fa9e518b7e68a6f7536d",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/rollback_runtime.sh",
+      "bytes": 658,
+      "sha256": "794b11427c05a248b0ecf8eaa8fd0ee1ec4e5b8e739a65d9ab26ee969c50fe85",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/seal_archaic_reference.py",
+      "bytes": 1336,
+      "sha256": "cbd3c6066c41571385ca7998ef55ed4c3533bc8c3e33f95778c8c12c840153bc",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/seal_archaic_reference.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/select_ancient_sources.py",
+      "bytes": 5520,
+      "sha256": "ca7ba2b53b6913139ef9739e7f6384103c7bf56a30088d37f4c0aa93f49c764b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/select_ancient_sources.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/setup_discovery_stage.sh",
+      "bytes": 1568,
+      "sha256": "ea586b5acd56b171f9acb8090ca6a314be6b2dcd7c18798a587bac4bf73ada34",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/test_discovery.cjs",
+      "bytes": 10981,
+      "sha256": "28f3dee8727ce3553c854581042b8b4472bfa2a3e393212e6d8eb974a3f55844",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_discovery.cjs"
+      ]
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/test_interface.cjs",
+      "bytes": 12706,
+      "sha256": "2d24ed5415e7381646073b8127205f0f2c509c04d58f7a41c32c180f186f37e7",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/tidy_origins_ui.py",
+      "bytes": 818,
+      "sha256": "8750004f5788f0b48bc457901c3eec4880981c1e3d1e426611fd0f7dadc45a1a",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/upgrade_interface.py",
+      "bytes": 25621,
+      "sha256": "9b96f65382026dccfcaa3d71c5c6b5f5bd7e064bfdd1054c50eeed6028eb4bcc",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_ancient_reference_alleles.py",
+      "bytes": 3664,
+      "sha256": "01fcc69ef4dfb147ec29bb3f8e8c8cd7824308d196630b21daa7123ffb926edc",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_ancient_reference_alleles.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_ancient_source_rows.py",
+      "bytes": 3342,
+      "sha256": "f58f10bef9d7bcc171dd659dcb117e4f734f978d92d12e66bbf88b82d84243f5",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_ancient_source_rows.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+      "bytes": 4344,
+      "sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/validate_population_candidate_subset.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/verify_discovery_backend.sh",
+      "bytes": 900,
+      "sha256": "09452b25e8aa55dabddd094f4fea836e78fb0006880d27ad1833c83b19e4e4ce",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/verify_final_ancient_pack.py",
+      "bytes": 2629,
+      "sha256": "840e3a3d29f81126baca37bd5c835ea24b701d5825b37beb56d62564bb8d7514",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/verify_final_ancient_pack.py"
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/verify_interface.py",
+      "bytes": 4787,
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/audit_public_modern_metadata.py",
+      "bytes": 1711,
+      "sha256": "e4da2145ab723c06cfa31ee1e48fdd686f37b9ee12f21a72676c5d309589f0be",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/audit_public_modern_metadata.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/audit_regional_candidate.py",
+      "bytes": 1883,
+      "sha256": "69d103861cf78ff5e3ca2cfb56abc173d3b7025c3ef07d8f6dd0548c74c8200f",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/audit_regional_candidate.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/build_ancestry_story_ui.py",
+      "bytes": 5202,
+      "sha256": "8179beee5f38ecb455bd4ed10b9026c62a7b5fc554d07aba096ce4dc6e3d4f66",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/build_regional_refs.py",
+      "bytes": 13523,
+      "sha256": "1e032863f3eedd293163e71c14383381451673fd2e096ca43f05e249d35f9511",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/build_regional_refs.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/create_regional_synthetic_fixture.py",
+      "bytes": 1174,
+      "sha256": "d592fb55fdf41fe2fc2264224c1041d1a236579456a37b909b72ea45b958d722",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/create_regional_synthetic_fixture.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/deploy_ancestry_release.sh",
+      "bytes": 1717,
+      "sha256": "2bc9bfb9152430ebea25c015be79c64440bda40357a9d86452a703ec4037af29",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/dna-extracted.js",
+      "bytes": 139363,
+      "sha256": "408be52abe279d2bfe640c1c99c56cc4c537cd6fa0f610453261bca2ac189e43",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/download_regional_ranges.py",
+      "bytes": 3120,
+      "sha256": "c54b100ceb06f97668de1d8e751e7b86eaa745411c85592e65099154af881bf1",
+      "decision": "restored_portable_tool",
+      "reason": "Local HTTPS retrieval only; owner SSH transport removed; paths and byte ranges validated.",
+      "public_path": "web/scripts/reference-models/download_regional_ranges.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/ingest_regional_ranges.py",
+      "bytes": 1086,
+      "sha256": "b2b65b28b8ba650c859faf506abed16ed4dd4b914169063cb973263317d0cd6a",
+      "decision": "private_transport_excluded",
+      "reason": "Owner SSH transfer protocol and host coupling; a local-only range downloader is provided separately."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/merge_synthetic_ancestry_fixture.py",
+      "bytes": 1377,
+      "sha256": "ff6592ed63ba95e90b7e4fa7083617e7a40ef0d1858f2f9e005ef39cd8695577",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/merge_synthetic_ancestry_fixture.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/prepare_ancestry_tests.sh",
+      "bytes": 847,
+      "sha256": "d763666e0f9b5c0e52de8801d2c050469a93b800d1dcdfde0325786d9328e497",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/preview-check.js",
+      "bytes": 57,
+      "sha256": "f291652fa4d94b94c3e85aa31d9897478c1f62cb82143545e64bd21ae3e67af0",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/preview_ancestry_story.py",
+      "bytes": 3784,
+      "sha256": "2e417b2d82c85868026094d749eb565772c4bc72b3bb3f77fd6c1a33c68956c2",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/preview_discovery_ui.py",
+      "bytes": 2817,
+      "sha256": "17d9ff4fcff52b484ff320781e38e30c4dfdeb6eba31d8c7393c17d21ec20bdf",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/preview_origins_ui.py",
+      "bytes": 6024,
+      "sha256": "af0f8e46c4fc271acc11b0fadbe19da15b405a4986ed40e7853ec9e9dc36c495",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/rollback_ancestry_release.sh",
+      "bytes": 1400,
+      "sha256": "b88c48c53b6f95f0d1f3d83278bc219824d88ea89791c3b16e09cdf5215057d3",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/select_regional_sources.py",
+      "bytes": 5634,
+      "sha256": "0bc4268f092c703d2a1eb9e0d01a386be2f314b579f5231eb096502a0944e0b1",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/select_regional_sources.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/setup_ethnicity_stage.sh",
+      "bytes": 1820,
+      "sha256": "b902c9b775124d9b3f2cc6a3aebde9e39f35374af5085076b4787b6a78fd5686",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/test_ancestry.cjs",
+      "bytes": 11365,
+      "sha256": "5c715e9403bacb1a380862eb44734e92f7762d31af511a0a8540cbf6250ec6e4",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_ancestry.cjs"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/test_discovery.cjs",
+      "bytes": 11256,
+      "sha256": "26e54e989b2445b0c8b98b957a0538f1200f7e7169925eb0534b75cf4df788df",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_discovery.cjs"
+      ]
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/test_interface.cjs",
+      "bytes": 12706,
+      "sha256": "2d24ed5415e7381646073b8127205f0f2c509c04d58f7a41c32c180f186f37e7",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_hwe.py",
+      "bytes": 2272,
+      "sha256": "6ea82cef2475196a1c471e2c44ec874b543a0b9d553cab8162bbd6e240ed1116",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_regional_hwe.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_mixture.py",
+      "bytes": 29731,
+      "sha256": "0e2368fc55cbdcd48d82023926f8068ac9a87d93d7e5766f944a293d0379100f",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_regional_mixture.py"
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/verify_ancestry_backend.sh",
+      "bytes": 1080,
+      "sha256": "7f1a406bbc298f861398b609a905ee859daac8c125cd883580fa7f6cc241f6ef",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/verify_interface.py",
+      "bytes": 4787,
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/activate_expanded_release.sh",
+      "bytes": 2470,
+      "sha256": "8fad8d6e571cdd7c086c3092352233fb152f9516890333f38e2b41b45ec0515c",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/audit_panels.py",
+      "bytes": 1391,
+      "sha256": "f0eeb323479019a1b564d5b819c57364b9c221ef4fd1c0892c64eec6d99d7bd0",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/build_ancestry_reference.py",
+      "bytes": 30047,
+      "sha256": "28a096b1795dea8f8fefe9861c692f68672f0427ad9c9964f36019295b49482b",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/build_ancestry_reference.py"
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/build_population_candidate.py",
+      "bytes": 18723,
+      "sha256": "fc499aeab5de99d99b133b6bdc5e012abdf64d66ddb985d32aed0a0837393cce",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_population_candidate.py"
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/build_reference_catalog.py",
+      "bytes": 4357,
+      "sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/build_reference_catalog.py"
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/create_rollback.sh",
+      "bytes": 826,
+      "sha256": "1bd4f1b9b671d14c294cc9759e5ecbb7f4fd506bbbdedbf34fc03faa92edf77e",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/deploy_final_library.sh",
+      "bytes": 913,
+      "sha256": "388593f261f2c1be76d4e53e6ef2d4ca2b2f73d81883e60a69e6c5da1a6432c9",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/deploy_runtime.sh",
+      "bytes": 1092,
+      "sha256": "67ea29e7d1e315eb85165a4ecaeb76dadba222a134e03b0ba7feaea9658aa6de",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/dna-extracted.js",
+      "bytes": 101873,
+      "sha256": "8c6d82f4648944a88e3d2ad968c3eee35bc1991579040688c9ae5379274f4649",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/inspect_health_indexes.py",
+      "bytes": 518,
+      "sha256": "4ddb475782f25c13fc587618b87941f67d4088a40dc949e0334aae441bafb688",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/interface_evidence.js",
+      "bytes": 17889,
+      "sha256": "d63707beaa81d772f679e7c51017726538618c92bf2e39a912eac7f4d18e98e7",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/make_synthetic_fixture.py",
+      "bytes": 972,
+      "sha256": "fa12d0aec9fa3c1b8ff442a2abefa890efed0266117855dd1056575344af6848",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/probe_candidate.py",
+      "bytes": 1231,
+      "sha256": "c87e2d8ce183a7c6c6a4e157fa72189aa15c490ed86106550289880ca6fbf25d",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/repair_public_chr21.py",
+      "bytes": 2850,
+      "sha256": "14ca56683153c4ad41892a6347bead9d859bd22fccaf9620e66ec533ac6111fe",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/repair_public_chr21.py"
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/rollback_expanded_release.sh",
+      "bytes": 1086,
+      "sha256": "341d1e6f5d8ca85176291444dae567e0c2545fc30d6eeba0a0ea4b8ad3b37110",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/rollback_runtime.sh",
+      "bytes": 658,
+      "sha256": "794b11427c05a248b0ecf8eaa8fd0ee1ec4e5b8e739a65d9ab26ee969c50fe85",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/test_interface.cjs",
+      "bytes": 7560,
+      "sha256": "84bce9f25ba8614a80853bbb471e70fe0069d2ee90049ae7ecf2c36d4c531ed6",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/upgrade_interface.py",
+      "bytes": 25621,
+      "sha256": "9b96f65382026dccfcaa3d71c5c6b5f5bd7e064bfdd1054c50eeed6028eb4bcc",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+      "bytes": 4344,
+      "sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/validate_population_candidate_subset.py"
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/verify_interface.py",
+      "bytes": 4695,
+      "sha256": "be1f85db72a29ada06da1c87ff2ed1a5c9ce64e98db66ca11e7aee275d84abf8",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/activate_expanded_release.sh",
+      "bytes": 2470,
+      "sha256": "8fad8d6e571cdd7c086c3092352233fb152f9516890333f38e2b41b45ec0515c",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/audit_panels.py",
+      "bytes": 1391,
+      "sha256": "f0eeb323479019a1b564d5b819c57364b9c221ef4fd1c0892c64eec6d99d7bd0",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_ancestry_reference.py",
+      "bytes": 30047,
+      "sha256": "28a096b1795dea8f8fefe9861c692f68672f0427ad9c9964f36019295b49482b",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/build_ancestry_reference.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_ancient_origins.py",
+      "bytes": 14669,
+      "sha256": "e8514fcfb054f56ac6cbcedc11f979905a8077eade2d1b83a2c3a9e134c61d7b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_ancient_origins.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_ancient_origins_v1.py",
+      "bytes": 13245,
+      "sha256": "406ef969474cecb5a8a5620cf8f215a1e2b7ecfd340df0d056ce78c08bd3c879",
+      "decision": "obsolete_builder_revision",
+      "public_path": "web/scripts/reference-models/build_ancient_origins.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_archaic_markers.py",
+      "bytes": 8772,
+      "sha256": "bf83a11b76993a19b13c305282653154b1642d1d871f7e3419ebd77c397e979b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_archaic_markers.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_origins_synthetic_fixture.py",
+      "bytes": 2177,
+      "sha256": "e96eca9688e4082d2dd8741f0ed49d91570a88d8e149492996581f5418a224ef",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_origins_synthetic_fixture.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_origins_ui.py",
+      "bytes": 7903,
+      "sha256": "4f98b852e2726d3abd8a91ad4ea795b4ea7634365238547de98f532016b3ff89",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_population_candidate.py",
+      "bytes": 18723,
+      "sha256": "fc499aeab5de99d99b133b6bdc5e012abdf64d66ddb985d32aed0a0837393cce",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/build_population_candidate.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/build_reference_catalog.py",
+      "bytes": 4357,
+      "sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/build_reference_catalog.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/create_rollback.sh",
+      "bytes": 826,
+      "sha256": "1bd4f1b9b671d14c294cc9759e5ecbb7f4fd506bbbdedbf34fc03faa92edf77e",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/deploy_final_library.sh",
+      "bytes": 913,
+      "sha256": "388593f261f2c1be76d4e53e6ef2d4ca2b2f73d81883e60a69e6c5da1a6432c9",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/deploy_myheritage_header_fix.sh",
+      "bytes": 1145,
+      "sha256": "77b87db2076da259fff43921ed5d810af750c49a8cb2807a4ce662d94d2b9304",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/deploy_origins_release.sh",
+      "bytes": 1737,
+      "sha256": "5b9ac2a3d2295f52bc6f3617d806400de4878681640d083721dd0b971b846518",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/deploy_origins_report_polish.sh",
+      "bytes": 1293,
+      "sha256": "a40ecd755fadfc6ecc5544742ea5778954d49f52e1f4d68f5ab1d507e823faf4",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/deploy_runtime.sh",
+      "bytes": 1092,
+      "sha256": "67ea29e7d1e315eb85165a4ecaeb76dadba222a134e03b0ba7feaea9658aa6de",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/dna-extracted.js",
+      "bytes": 138028,
+      "sha256": "b08939d0d4d86c3a5971f70e7de4006962bbe663e6faf08ec594a24c190dff89",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/download_ancient_ranges.ps1",
+      "bytes": 2760,
+      "sha256": "4d7eb4d68c23e3762f98bb30155306e4eee87afc21e5b5f4856143fa75e5225e",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/download_archaic_reference.py",
+      "bytes": 1216,
+      "sha256": "5ceba4e55e14de6ac6cb9c7adc71e88a31cc7deacff85b853d7e758a87cf7850",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/inspect_archaic_source.py",
+      "bytes": 970,
+      "sha256": "3c988f8176a5fc7ef88397b27378d957d93e4cc7adecbdcab5ad7c1cf67efffb",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/inspect_health_indexes.py",
+      "bytes": 518,
+      "sha256": "4ddb475782f25c13fc587618b87941f67d4088a40dc949e0334aae441bafb688",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/interface_evidence.js",
+      "bytes": 17889,
+      "sha256": "d63707beaa81d772f679e7c51017726538618c92bf2e39a912eac7f4d18e98e7",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/make_myheritage_browser_fixture.py",
+      "bytes": 836,
+      "sha256": "9240b72cf8a882cae7228dba863c1fbf474d8911553fe6a69b5ea81909bcb921",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/make_myheritage_browser_fixture.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/make_synthetic_fixture.py",
+      "bytes": 972,
+      "sha256": "fa12d0aec9fa3c1b8ff442a2abefa890efed0266117855dd1056575344af6848",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/origins-ui.js",
+      "bytes": 28444,
+      "sha256": "14bded81d00972e3472925d136de61417cb620882f2b3fe817dcb2aca825ba52",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/preview_origins_ui.py",
+      "bytes": 6018,
+      "sha256": "9d6ed7e0d7985d0aef49e2fee0b76576bb3a7cebe4c26835e566307d3fdeabdf",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/probe_ancient_sources.py",
+      "bytes": 2746,
+      "sha256": "b345d4dc6e5a27570ea1d030ff4addc014bb84456087e7f268f7461bf1a9c5eb",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/probe_candidate.py",
+      "bytes": 1231,
+      "sha256": "c87e2d8ce183a7c6c6a4e157fa72189aa15c490ed86106550289880ca6fbf25d",
+      "decision": "exploratory_reference_diagnostic_excluded",
+      "reason": "One-off source inspection/probe or environment repair; current reusable builders and validators are public."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/repair_public_chr21.py",
+      "bytes": 2850,
+      "sha256": "14ca56683153c4ad41892a6347bead9d859bd22fccaf9620e66ec533ac6111fe",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/repair_public_chr21.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/rollback_expanded_release.sh",
+      "bytes": 1086,
+      "sha256": "341d1e6f5d8ca85176291444dae567e0c2545fc30d6eeba0a0ea4b8ad3b37110",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/rollback_origins_release.sh",
+      "bytes": 1076,
+      "sha256": "8bf2a34316be8910166fea1970c0a3cb9d51367d0f20fa9e518b7e68a6f7536d",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/rollback_runtime.sh",
+      "bytes": 658,
+      "sha256": "794b11427c05a248b0ecf8eaa8fd0ee1ec4e5b8e739a65d9ab26ee969c50fe85",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/seal_archaic_reference.py",
+      "bytes": 1336,
+      "sha256": "cbd3c6066c41571385ca7998ef55ed4c3533bc8c3e33f95778c8c12c840153bc",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/seal_archaic_reference.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/select_ancient_sources.py",
+      "bytes": 5520,
+      "sha256": "ca7ba2b53b6913139ef9739e7f6384103c7bf56a30088d37f4c0aa93f49c764b",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/select_ancient_sources.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/test_interface.cjs",
+      "bytes": 12706,
+      "sha256": "2d24ed5415e7381646073b8127205f0f2c509c04d58f7a41c32c180f186f37e7",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/tidy_origins_ui.py",
+      "bytes": 818,
+      "sha256": "8750004f5788f0b48bc457901c3eec4880981c1e3d1e426611fd0f7dadc45a1a",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/upgrade_interface.py",
+      "bytes": 25621,
+      "sha256": "9b96f65382026dccfcaa3d71c5c6b5f5bd7e064bfdd1054c50eeed6028eb4bcc",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/validate_ancient_reference_alleles.py",
+      "bytes": 3664,
+      "sha256": "01fcc69ef4dfb147ec29bb3f8e8c8cd7824308d196630b21daa7123ffb926edc",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_ancient_reference_alleles.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/validate_ancient_source_rows.py",
+      "bytes": 3342,
+      "sha256": "f58f10bef9d7bcc171dd659dcb117e4f734f978d92d12e66bbf88b82d84243f5",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/validate_ancient_source_rows.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+      "bytes": 4344,
+      "sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/validate_population_candidate_subset.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/verify_final_ancient_pack.py",
+      "bytes": 2629,
+      "sha256": "840e3a3d29f81126baca37bd5c835ea24b701d5825b37beb56d62564bb8d7514",
+      "decision": "restored_portable_tool",
+      "public_path": "web/scripts/reference-models/verify_final_ancient_pack.py"
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/verify_interface.py",
+      "bytes": 4784,
+      "sha256": "e0f9c7da020bcdea29dad8358eca4679213df102f58783083de034254781270d",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/deploy_validation.sh",
+      "bytes": 1332,
+      "sha256": "32695adb24485562ac2f1cb67ec11744733a727fea98422df8af7f5382e5bf7b",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/dna-extracted.js",
+      "bytes": 138921,
+      "sha256": "a8170870b4e6074423f7ae9cadb604d613d42b23e85f5e0ac3bd060bd24dddc1",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/evaluate_ashkenazi_trace.py",
+      "bytes": 8328,
+      "sha256": "b56dabd85424f87636806f62d54daa6e448492012d00bb2fd30df935fdb7c315",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/reference-models/evaluate_ashkenazi_trace.py"
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/local_composition_audit.py",
+      "bytes": 5984,
+      "sha256": "c4ea29b725ebf0af45d1537a6983b886a7755e04b67053783f74a8e7f4dac886",
+      "decision": "private_owner_workflow_excluded",
+      "reason": "Owner review model pins and private-review output conventions; not the production composition engine. Synthetic gates depend on that private workflow."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/prepare_validation_tests.sh",
+      "bytes": 716,
+      "sha256": "95947fb4ff7e3501f525f594c84e37e824b2093281b23322c5cadb8d0511af07",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/preview_customer.py",
+      "bytes": 3233,
+      "sha256": "7ca71af9c7a8f0cd3324f855b8c6801a5d7815ded3557da8726754a105844a0d",
+      "decision": "historical_ui_generator_or_snapshot",
+      "reason": "One-off UI patch/preview/snapshot; maintained DNA UI source is included in web/dna.php, web/app and web/assets."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/rollback_validation.sh",
+      "bytes": 1270,
+      "sha256": "7b2bd2b32aed28faed4d672bbff945d798c27a1eaea978c0e3272c8dcb574253",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/setup_validation_stage.sh",
+      "bytes": 1254,
+      "sha256": "bc03995cc94da51b7d43ff08af54e417c79f0078c7843ae2f729d339842a1e04",
+      "decision": "historical_host_operations_excluded",
+      "reason": "Site-specific deployment, rollback, cache invalidation or host configuration; does not implement a missing research engine."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/test_ancestry.cjs",
+      "bytes": 11365,
+      "sha256": "5c715e9403bacb1a380862eb44734e92f7762d31af511a0a8540cbf6250ec6e4",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_ancestry.cjs"
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/test_country.cjs",
+      "bytes": 18656,
+      "sha256": "1e9d43e7ed7dbb2c98e1748b5cb01572bc1cc849ef1928218a77d89bf3118bf3",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_country.cjs"
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/test_customer.cjs",
+      "bytes": 11756,
+      "sha256": "95a4258e3da1acf435521b2449824e4fd2a6d111d4bc29ac0443eeec0b7dfe41",
+      "decision": "byte_identical_public_source",
+      "public_path": "web/scripts/test_customer.cjs"
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/test_discovery.cjs",
+      "bytes": 11256,
+      "sha256": "26e54e989b2445b0c8b98b957a0538f1200f7e7169925eb0534b75cf4df788df",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": [
+        "web/scripts/test_discovery.cjs"
+      ]
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/test_local_audit_gates.py",
+      "bytes": 1148,
+      "sha256": "25de5ff844ebca665b3af2a6a8cea898df7da1dd48661e88100b3497472ac32b",
+      "decision": "private_owner_workflow_excluded",
+      "reason": "Owner review model pins and private-review output conventions; not the production composition engine. Synthetic gates depend on that private workflow."
+    },
+    {
+      "source": "_dna_validation_release_20260905/scripts/verify_interface.py",
+      "bytes": 4787,
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "decision": "historical_qa_harness",
+      "reason": "Stage-specific QA fixture/path harness; current app tests remain public. No production algorithm is contained in this harness.",
+      "public_equivalents": []
+    }
+  ],
+  "additional_owner_workflows": [
+    {
+      "source": "dna_ancestry_analysis_20260713/analysis.py",
+      "bytes": 27920,
+      "sha256": "a47cf6a1f541056686d83b25a65a5534dad1597164dc1cc58bfa6a34c5d83549",
+      "decision": "private_owner_analysis_excluded",
+      "reason": "Owner-specific exploratory report pipeline with target-input path, hypothesis-specific source lists, private genotype cache and individual-level exports; retained privately. Production affinity/composition engines and reusable public-reference evaluators are restored separately."
+    },
+    {
+      "source": "dna_private_audit/audit_dna.py",
+      "bytes": 13127,
+      "sha256": "2bf994a28ddca5bac6a354a23de5a673db8457ac354c6b33bab37eab70da5b0a",
+      "decision": "private_owner_analysis_excluded",
+      "reason": "Private owner document/DNA review workflow."
+    },
+    {
+      "source": "dna_private_audit/extract_pdfs.py",
+      "bytes": 3300,
+      "sha256": "5342fc7c468cfc2660c8ba9193c9840f57478e9891ed90e435eb7ca9d854a52b",
+      "decision": "private_owner_analysis_excluded",
+      "reason": "Private report extraction workflow."
+    },
+    {
+      "source": "dna_private_audit/six_sentence_audit.py",
+      "bytes": 11387,
+      "sha256": "c5d0501483c7ae7e0e9c3b4c6ef3eb70e7e80a0d96d667c7b6e646a10534eeca",
+      "decision": "private_owner_analysis_excluded",
+      "reason": "Private report assertion audit."
+    }
+  ],
+  "unique_candidates": [
+    {
+      "sha256": "622ab09b7b3633b48220bf3c8fb641e5311740668ea231db32a2c7fbee62d27b",
+      "bytes": 3130,
+      "sources": [
+        "_dna_country_release_20260905/scripts/bigsnpr_additional_checks.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "7f1cd7e038a2ff42cdf184d6293deca88bbe871fb480fc34380320c4a394f072",
+      "bytes": 4481,
+      "sources": [
+        "_dna_country_release_20260905/scripts/build_bigsnpr_public_challenge.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "b577b411e1ec1924ce81e19f36ed0b2bc28727c954d1c8bc87a7b6fab643b6f5",
+      "bytes": 6322,
+      "sources": [
+        "_dna_country_release_20260905/scripts/build_composition_bridge.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "218df747a0cddf84a11a3cc13cef6ecb461571eaad15692beb20e8023583a756",
+      "bytes": 3075,
+      "sources": [
+        "_dna_country_release_20260905/scripts/build_composition_union.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "b1881b762a6ad3b45be59f139ef2397385fd2a249c0c6bb310b912da5993801c",
+      "bytes": 269,
+      "sources": [
+        "_dna_country_release_20260905/scripts/check_country_catalog.php"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "3ca8073ba8fb89292b580e28ded7ed91f94225792931eadcb9f02588e7aa0dd5",
+      "bytes": 1482,
+      "sources": [
+        "_dna_country_release_20260905/scripts/check_country_catalog_fpm.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "96d2048168babc66eb7c77335cf4901ff3024089f57cdafd47a918c2e87b0048",
+      "bytes": 1480,
+      "sources": [
+        "_dna_country_release_20260905/scripts/check_country_fpm.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "17b64cf8932a6bb5c23bc5098ad05b978ce8b2aa51fbfcf68e289b618f989066",
+      "bytes": 692,
+      "sources": [
+        "_dna_country_release_20260905/scripts/check_country_worker.php"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "d859f5603c921a15eabcad4cecd5449460d55b02691bf556f5857252be5b079c",
+      "bytes": 4847,
+      "sources": [
+        "_dna_country_release_20260905/scripts/composition_worker.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "a7591d83332d2ddbd4bfaf55b520bb9174fe3db0ec6f6b57f9b619072887e93a",
+      "bytes": 1638,
+      "sources": [
+        "_dna_country_release_20260905/scripts/deploy_country.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "a8170870b4e6074423f7ae9cadb604d613d42b23e85f5e0ac3bd060bd24dddc1",
+      "bytes": 138921,
+      "sources": [
+        "_dna_country_release_20260905/scripts/dna-extracted.js",
+        "_dna_validation_release_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "22f2b94592bbbdc0d334d130171372d3f9c5a473e3c662a16c12abdfabd7d67c",
+      "bytes": 9764,
+      "sources": [
+        "_dna_country_release_20260905/scripts/evaluate_bigsnpr_composition.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "62309b6713da0e867e9c36cf8b9aa6fa9959288a7637fbfb89e9170b4643922e",
+      "bytes": 2512,
+      "sources": [
+        "_dna_country_release_20260905/scripts/fetch_bigsnpr_reference.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "ba3bb0d6d6a062ff817a986c54f920d6ba72570259fa1b6beb3599fa7320352c",
+      "bytes": 1104,
+      "sources": [
+        "_dna_country_release_20260905/scripts/install_composition.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "f1540b4ee18a7ce0f4f6494cea075d5f396429471a693ca5fe5045b36dbefb44",
+      "bytes": 493,
+      "sources": [
+        "_dna_country_release_20260905/scripts/invalidate_country.php"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "50801d29d44ae0eea68b54cd14c9afc0317ed9b889ab23a7b570f5879ea63936",
+      "bytes": 1492,
+      "sources": [
+        "_dna_country_release_20260905/scripts/invalidate_country_fpm.py"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "417d7fe56f3a50ea4805bc30546539a645f699f8af1f08f88cecf0e8c5b9d5c5",
+      "bytes": 3197,
+      "sources": [
+        "_dna_country_release_20260905/scripts/preview_customer.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "5603028d70ad3d965032064a6021c15aa9a24707597bd2750ca5c3321af7a900",
+      "bytes": 702,
+      "sources": [
+        "_dna_country_release_20260905/scripts/regression_country.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "ed65db12a22d3aac5e30cbe1a06acfc4e533e6f91300bf38b45b7632516066fa",
+      "bytes": 1312,
+      "sources": [
+        "_dna_country_release_20260905/scripts/rollback_country.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "c1cea117e19c21e50e1a3792407bceeee91a39f97324b0d7211b0685977b3415",
+      "bytes": 3557,
+      "sources": [
+        "_dna_country_release_20260905/scripts/seal_composition_bundle.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "9512ff1b7b74d14c6ba437a5034787c5f328079f15110195ad0d16a28933a0bf",
+      "bytes": 1028,
+      "sources": [
+        "_dna_country_release_20260905/scripts/setup_country_fpm_qa.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "38c09e44c0e9e685f8fc195db53842d51c5ddfc3ae1ff6f16d731f2220bf43d9",
+      "bytes": 2170,
+      "sources": [
+        "_dna_country_release_20260905/scripts/setup_country_stage.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "5c715e9403bacb1a380862eb44734e92f7762d31af511a0a8540cbf6250ec6e4",
+      "bytes": 11365,
+      "sources": [
+        "_dna_country_release_20260905/scripts/test_ancestry.cjs",
+        "_dna_customer_release_20260905/scripts/test_ancestry.cjs",
+        "_dna_ethnicity_upgrade_20260905/scripts/test_ancestry.cjs",
+        "_dna_validation_release_20260905/scripts/test_ancestry.cjs"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "de3ff6870d23c9a3f2a14493621115e2d21b0d9460105eafeafe34d183a9b958",
+      "bytes": 12995,
+      "sources": [
+        "_dna_country_release_20260905/scripts/test_country.cjs"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "95a4258e3da1acf435521b2449824e4fd2a6d111d4bc29ac0443eeec0b7dfe41",
+      "bytes": 11756,
+      "sources": [
+        "_dna_country_release_20260905/scripts/test_customer.cjs",
+        "_dna_customer_release_20260905/scripts/test_customer.cjs",
+        "_dna_validation_release_20260905/scripts/test_customer.cjs"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "26e54e989b2445b0c8b98b957a0538f1200f7e7169925eb0534b75cf4df788df",
+      "bytes": 11256,
+      "sources": [
+        "_dna_country_release_20260905/scripts/test_discovery.cjs",
+        "_dna_customer_release_20260905/scripts/test_discovery.cjs",
+        "_dna_ethnicity_upgrade_20260905/scripts/test_discovery.cjs",
+        "_dna_validation_release_20260905/scripts/test_discovery.cjs"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "df0670c0af77a2ac6e1572547a67338350fdbad10b2fe5624851d83883ebf4ca",
+      "bytes": 6144,
+      "sources": [
+        "_dna_country_release_20260905/scripts/validate_composition_bundle.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "e8b8453809f02b43776c71de147019148df15329aa99dd7afa4b8e390ba619b5",
+      "bytes": 4787,
+      "sources": [
+        "_dna_country_release_20260905/scripts/verify_interface.py",
+        "_dna_customer_release_20260905/scripts/verify_interface.py",
+        "_dna_discovery_upgrade_20260905/scripts/verify_interface.py",
+        "_dna_ethnicity_upgrade_20260905/scripts/verify_interface.py",
+        "_dna_validation_release_20260905/scripts/verify_interface.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "94102f7503b86a7ec05a761c562edfbe1f570301e8e78d1fe644895c144ece20",
+      "bytes": 3897,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/build_grafanc_bundle.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "868d23fd8c99a78c2f7dd79d4531a16bcf9979da64ca6b70aa01713e3fd741da",
+      "bytes": 779,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/build_grafanc_isolated.sh"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "56d28486f663b75947d333bc1cfd700bace5499809ffdb4a54064e22b205ff65",
+      "bytes": 1480,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/check_customer_fpm.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "4643e644a0edb605bf0babc135791063458c4d5630b3bf148cf4f35e9c000382",
+      "bytes": 790,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/check_customer_worker.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "440c89831914a831c09b0983a1166d855a5e2d003ec04fdb644240ab3cfe4250",
+      "bytes": 3311,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/check_grafanc_author_regression.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "f91322135defa85e289302a1822238fe6d2d54cb15d7b866d4c52ee7bd400f99",
+      "bytes": 1287,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/create_grafanc_synthetic.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "2f2b1adbbf4ba5f5149fae2ba0b4a44a84a72f3481e8d01e9f16b7c5e720c6d7",
+      "bytes": 1664,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/deploy_customer.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "21599942d8a6f32097bfa4dc46605cf1f7e58a7db0d2aafa1cc82aeff5687a35",
+      "bytes": 138007,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "ccbfbb69cf3c4d7ce99c74ec0c81948b5e295f6352464384eb1ce9d657faf8f3",
+      "bytes": 5192,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/evaluate_grafanc_public.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "833d45780fbfb5af2cad6c28a56b38f7b5b5fb1470dddd5b4ee3301fc9e06a5d",
+      "bytes": 1748,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/fetch_grafanc_public.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "621394a934347ada1eeeddd88c1b5b1b452da34b94421377bc740a2f266fa660",
+      "bytes": 1230,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/install_grafanc_bundle.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "e3403dc3a1b4066439bd280dfcd4c7c7ee6188bb511b743f08d043ceb14851f0",
+      "bytes": 573,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/invalidate_customer.php"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "e901e9482e65d51e94937ec69fd50569309aa99ab92cfa722096ff01fff3eca8",
+      "bytes": 2414,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/preview_customer.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "da6a1b6efbfbb78ab401621baacef66f5ac1ce6ece0a228a4d66b49aa7dab645",
+      "bytes": 1257,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/rollback_customer.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "765e0dc607c37532e85a08d85bb10f90bba6105a3386d6983d06b6a0d8351885",
+      "bytes": 1805,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/setup_customer_stage.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "d4e6c24caf5d207e0f1fa7407c07607965a6cbdca9e80de14b88d7a884bc4045",
+      "bytes": 657,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/test_customer_stage.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "2d24ed5415e7381646073b8127205f0f2c509c04d58f7a41c32c180f186f37e7",
+      "bytes": 12706,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/test_interface.cjs",
+        "_dna_discovery_upgrade_20260905/scripts/test_interface.cjs",
+        "_dna_ethnicity_upgrade_20260905/scripts/test_interface.cjs",
+        "_dna_origins_upgrade_20260905/scripts/test_interface.cjs"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "5e7ab7bb449726c42e815adf36116433ebd816d796b2daae4e45b0b606302109",
+      "bytes": 2268,
+      "sources": [
+        "_dna_customer_release_20260905/scripts/verify_grafanc_forward_reference.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "8fad8d6e571cdd7c086c3092352233fb152f9516890333f38e2b41b45ec0515c",
+      "bytes": 2470,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/activate_expanded_release.sh",
+        "_dna_lab_upgrade_20260905/scripts/activate_expanded_release.sh",
+        "_dna_origins_upgrade_20260905/scripts/activate_expanded_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "f0eeb323479019a1b564d5b819c57364b9c221ef4fd1c0892c64eec6d99d7bd0",
+      "bytes": 1391,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/audit_panels.py",
+        "_dna_lab_upgrade_20260905/scripts/audit_panels.py",
+        "_dna_origins_upgrade_20260905/scripts/audit_panels.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "28a096b1795dea8f8fefe9861c692f68672f0427ad9c9964f36019295b49482b",
+      "bytes": 30047,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_ancestry_reference.py",
+        "_dna_lab_upgrade_20260905/scripts/build_ancestry_reference.py",
+        "_dna_origins_upgrade_20260905/scripts/build_ancestry_reference.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "e8514fcfb054f56ac6cbcedc11f979905a8077eade2d1b83a2c3a9e134c61d7b",
+      "bytes": 14669,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_ancient_origins.py",
+        "_dna_origins_upgrade_20260905/scripts/build_ancient_origins.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "406ef969474cecb5a8a5620cf8f215a1e2b7ecfd340df0d056ce78c08bd3c879",
+      "bytes": 13245,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_ancient_origins_v1.py",
+        "_dna_origins_upgrade_20260905/scripts/build_ancient_origins_v1.py"
+      ],
+      "decisions": [
+        "obsolete_builder_revision"
+      ]
+    },
+    {
+      "sha256": "bf83a11b76993a19b13c305282653154b1642d1d871f7e3419ebd77c397e979b",
+      "bytes": 8772,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_archaic_markers.py",
+        "_dna_origins_upgrade_20260905/scripts/build_archaic_markers.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "9c4229bd47464b737b538a2ea276e0bff812c84d574cbe7411008287f727619d",
+      "bytes": 1103,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_discovery_stress_fixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "bab3db160d6505c9f78c046f1e77fa5a5a7756ad7208fdc333af73db284b1866",
+      "bytes": 1345,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_discovery_traits_fixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "2c4cdec4e3f5f0230125248f0cefca4bca1a38cda473b7a4a5a9a1b434d1846c",
+      "bytes": 5075,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_discovery_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "e96eca9688e4082d2dd8741f0ed49d91570a88d8e149492996581f5418a224ef",
+      "bytes": 2177,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_origins_synthetic_fixture.py",
+        "_dna_origins_upgrade_20260905/scripts/build_origins_synthetic_fixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "4f98b852e2726d3abd8a91ad4ea795b4ea7634365238547de98f532016b3ff89",
+      "bytes": 7903,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_origins_ui.py",
+        "_dna_origins_upgrade_20260905/scripts/build_origins_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "fc499aeab5de99d99b133b6bdc5e012abdf64d66ddb985d32aed0a0837393cce",
+      "bytes": 18723,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_population_candidate.py",
+        "_dna_lab_upgrade_20260905/scripts/build_population_candidate.py",
+        "_dna_origins_upgrade_20260905/scripts/build_population_candidate.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "bb5d2610ffdff1fccc0558ad6f4563d772c9969c622fe9cbcb9b58a7a538cd6e",
+      "bytes": 4357,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/build_reference_catalog.py",
+        "_dna_lab_upgrade_20260905/scripts/build_reference_catalog.py",
+        "_dna_origins_upgrade_20260905/scripts/build_reference_catalog.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "1bd4f1b9b671d14c294cc9759e5ecbb7f4fd506bbbdedbf34fc03faa92edf77e",
+      "bytes": 826,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/create_rollback.sh",
+        "_dna_lab_upgrade_20260905/scripts/create_rollback.sh",
+        "_dna_origins_upgrade_20260905/scripts/create_rollback.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "965dcbfa03ccb02500540542f2bd5278bfcf60d3597c27492b3db567cbb76a8b",
+      "bytes": 1536,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_discovery_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "388593f261f2c1be76d4e53e6ef2d4ca2b2f73d81883e60a69e6c5da1a6432c9",
+      "bytes": 913,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_final_library.sh",
+        "_dna_lab_upgrade_20260905/scripts/deploy_final_library.sh",
+        "_dna_origins_upgrade_20260905/scripts/deploy_final_library.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "77b87db2076da259fff43921ed5d810af750c49a8cb2807a4ce662d94d2b9304",
+      "bytes": 1145,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_myheritage_header_fix.sh",
+        "_dna_origins_upgrade_20260905/scripts/deploy_myheritage_header_fix.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "5b9ac2a3d2295f52bc6f3617d806400de4878681640d083721dd0b971b846518",
+      "bytes": 1737,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_origins_release.sh",
+        "_dna_origins_upgrade_20260905/scripts/deploy_origins_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "a40ecd755fadfc6ecc5544742ea5778954d49f52e1f4d68f5ab1d507e823faf4",
+      "bytes": 1293,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_origins_report_polish.sh",
+        "_dna_origins_upgrade_20260905/scripts/deploy_origins_report_polish.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "67ea29e7d1e315eb85165a4ecaeb76dadba222a134e03b0ba7feaea9658aa6de",
+      "bytes": 1092,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/deploy_runtime.sh",
+        "_dna_lab_upgrade_20260905/scripts/deploy_runtime.sh",
+        "_dna_origins_upgrade_20260905/scripts/deploy_runtime.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "557c5586dd56deea1096759696cd866d3356cc91387dd0f0ba955542b1eb9948",
+      "bytes": 138781,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "4d7eb4d68c23e3762f98bb30155306e4eee87afc21e5b5f4856143fa75e5225e",
+      "bytes": 2760,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/download_ancient_ranges.ps1",
+        "_dna_origins_upgrade_20260905/scripts/download_ancient_ranges.ps1"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "5ceba4e55e14de6ac6cb9c7adc71e88a31cc7deacff85b853d7e758a87cf7850",
+      "bytes": 1216,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/download_archaic_reference.py",
+        "_dna_origins_upgrade_20260905/scripts/download_archaic_reference.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "3c988f8176a5fc7ef88397b27378d957d93e4cc7adecbdcab5ad7c1cf67efffb",
+      "bytes": 970,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/inspect_archaic_source.py",
+        "_dna_origins_upgrade_20260905/scripts/inspect_archaic_source.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "4ddb475782f25c13fc587618b87941f67d4088a40dc949e0334aae441bafb688",
+      "bytes": 518,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/inspect_health_indexes.py",
+        "_dna_lab_upgrade_20260905/scripts/inspect_health_indexes.py",
+        "_dna_origins_upgrade_20260905/scripts/inspect_health_indexes.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "d63707beaa81d772f679e7c51017726538618c92bf2e39a912eac7f4d18e98e7",
+      "bytes": 17889,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/interface_evidence.js",
+        "_dna_lab_upgrade_20260905/scripts/interface_evidence.js",
+        "_dna_origins_upgrade_20260905/scripts/interface_evidence.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "9240b72cf8a882cae7228dba863c1fbf474d8911553fe6a69b5ea81909bcb921",
+      "bytes": 836,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/make_myheritage_browser_fixture.py",
+        "_dna_origins_upgrade_20260905/scripts/make_myheritage_browser_fixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "fa12d0aec9fa3c1b8ff442a2abefa890efed0266117855dd1056575344af6848",
+      "bytes": 972,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/make_synthetic_fixture.py",
+        "_dna_lab_upgrade_20260905/scripts/make_synthetic_fixture.py",
+        "_dna_origins_upgrade_20260905/scripts/make_synthetic_fixture.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "28b1dc712f29a5154a4c1ec95b821aac64d2626338e145b18ec55455f526ff01",
+      "bytes": 4564,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/optimize_sonic.ps1"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "14bded81d00972e3472925d136de61417cb620882f2b3fe817dcb2aca825ba52",
+      "bytes": 28444,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/origins-ui.js",
+        "_dna_origins_upgrade_20260905/scripts/origins-ui.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "464ca0537a1af0be203b2bfd391764f1259f2b93b70d16b794e7472b03ada71f",
+      "bytes": 29,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/preview-check.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "d49789f5ac1d52d7a51bb8e1e91c12d6e68e5b0ed0d2d249730f845340381320",
+      "bytes": 2662,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/preview_discovery_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "af0f8e46c4fc271acc11b0fadbe19da15b405a4986ed40e7853ec9e9dc36c495",
+      "bytes": 6024,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/preview_origins_ui.py",
+        "_dna_ethnicity_upgrade_20260905/scripts/preview_origins_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "b345d4dc6e5a27570ea1d030ff4addc014bb84456087e7f268f7461bf1a9c5eb",
+      "bytes": 2746,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/probe_ancient_sources.py",
+        "_dna_origins_upgrade_20260905/scripts/probe_ancient_sources.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "c87e2d8ce183a7c6c6a4e157fa72189aa15c490ed86106550289880ca6fbf25d",
+      "bytes": 1231,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/probe_candidate.py",
+        "_dna_lab_upgrade_20260905/scripts/probe_candidate.py",
+        "_dna_origins_upgrade_20260905/scripts/probe_candidate.py"
+      ],
+      "decisions": [
+        "exploratory_reference_diagnostic_excluded"
+      ]
+    },
+    {
+      "sha256": "14ca56683153c4ad41892a6347bead9d859bd22fccaf9620e66ec533ac6111fe",
+      "bytes": 2850,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/repair_public_chr21.py",
+        "_dna_lab_upgrade_20260905/scripts/repair_public_chr21.py",
+        "_dna_origins_upgrade_20260905/scripts/repair_public_chr21.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "8f9670ddc4940c1b977e05545e67296b8676651b346694dc0c7d15a43bbc33f9",
+      "bytes": 1014,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/rollback_discovery_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "341d1e6f5d8ca85176291444dae567e0c2545fc30d6eeba0a0ea4b8ad3b37110",
+      "bytes": 1086,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/rollback_expanded_release.sh",
+        "_dna_lab_upgrade_20260905/scripts/rollback_expanded_release.sh",
+        "_dna_origins_upgrade_20260905/scripts/rollback_expanded_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "8bf2a34316be8910166fea1970c0a3cb9d51367d0f20fa9e518b7e68a6f7536d",
+      "bytes": 1076,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/rollback_origins_release.sh",
+        "_dna_origins_upgrade_20260905/scripts/rollback_origins_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "794b11427c05a248b0ecf8eaa8fd0ee1ec4e5b8e739a65d9ab26ee969c50fe85",
+      "bytes": 658,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/rollback_runtime.sh",
+        "_dna_lab_upgrade_20260905/scripts/rollback_runtime.sh",
+        "_dna_origins_upgrade_20260905/scripts/rollback_runtime.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "cbd3c6066c41571385ca7998ef55ed4c3533bc8c3e33f95778c8c12c840153bc",
+      "bytes": 1336,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/seal_archaic_reference.py",
+        "_dna_origins_upgrade_20260905/scripts/seal_archaic_reference.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "ca7ba2b53b6913139ef9739e7f6384103c7bf56a30088d37f4c0aa93f49c764b",
+      "bytes": 5520,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/select_ancient_sources.py",
+        "_dna_origins_upgrade_20260905/scripts/select_ancient_sources.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "ea586b5acd56b171f9acb8090ca6a314be6b2dcd7c18798a587bac4bf73ada34",
+      "bytes": 1568,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/setup_discovery_stage.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "28f3dee8727ce3553c854581042b8b4472bfa2a3e393212e6d8eb974a3f55844",
+      "bytes": 10981,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/test_discovery.cjs"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "8750004f5788f0b48bc457901c3eec4880981c1e3d1e426611fd0f7dadc45a1a",
+      "bytes": 818,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/tidy_origins_ui.py",
+        "_dna_origins_upgrade_20260905/scripts/tidy_origins_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "9b96f65382026dccfcaa3d71c5c6b5f5bd7e064bfdd1054c50eeed6028eb4bcc",
+      "bytes": 25621,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/upgrade_interface.py",
+        "_dna_lab_upgrade_20260905/scripts/upgrade_interface.py",
+        "_dna_origins_upgrade_20260905/scripts/upgrade_interface.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "01fcc69ef4dfb147ec29bb3f8e8c8cd7824308d196630b21daa7123ffb926edc",
+      "bytes": 3664,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/validate_ancient_reference_alleles.py",
+        "_dna_origins_upgrade_20260905/scripts/validate_ancient_reference_alleles.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "f58f10bef9d7bcc171dd659dcb117e4f734f978d92d12e66bbf88b82d84243f5",
+      "bytes": 3342,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/validate_ancient_source_rows.py",
+        "_dna_origins_upgrade_20260905/scripts/validate_ancient_source_rows.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "1430e1debc8e1b295fb36aa328dfd08d4daba90fa61786d698b7ce9fffd252ba",
+      "bytes": 4344,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+        "_dna_lab_upgrade_20260905/scripts/validate_population_candidate_subset.py",
+        "_dna_origins_upgrade_20260905/scripts/validate_population_candidate_subset.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "09452b25e8aa55dabddd094f4fea836e78fb0006880d27ad1833c83b19e4e4ce",
+      "bytes": 900,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/verify_discovery_backend.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "840e3a3d29f81126baca37bd5c835ea24b701d5825b37beb56d62564bb8d7514",
+      "bytes": 2629,
+      "sources": [
+        "_dna_discovery_upgrade_20260905/scripts/verify_final_ancient_pack.py",
+        "_dna_origins_upgrade_20260905/scripts/verify_final_ancient_pack.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "e4da2145ab723c06cfa31ee1e48fdd686f37b9ee12f21a72676c5d309589f0be",
+      "bytes": 1711,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/audit_public_modern_metadata.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "69d103861cf78ff5e3ca2cfb56abc173d3b7025c3ef07d8f6dd0548c74c8200f",
+      "bytes": 1883,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/audit_regional_candidate.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "8179beee5f38ecb455bd4ed10b9026c62a7b5fc554d07aba096ce4dc6e3d4f66",
+      "bytes": 5202,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/build_ancestry_story_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "1e032863f3eedd293163e71c14383381451673fd2e096ca43f05e249d35f9511",
+      "bytes": 13523,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/build_regional_refs.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "d592fb55fdf41fe2fc2264224c1041d1a236579456a37b909b72ea45b958d722",
+      "bytes": 1174,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/create_regional_synthetic_fixture.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "2bc9bfb9152430ebea25c015be79c64440bda40357a9d86452a703ec4037af29",
+      "bytes": 1717,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/deploy_ancestry_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "408be52abe279d2bfe640c1c99c56cc4c537cd6fa0f610453261bca2ac189e43",
+      "bytes": 139363,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "c54b100ceb06f97668de1d8e751e7b86eaa745411c85592e65099154af881bf1",
+      "bytes": 3120,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/download_regional_ranges.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "b2b65b28b8ba650c859faf506abed16ed4dd4b914169063cb973263317d0cd6a",
+      "bytes": 1086,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/ingest_regional_ranges.py"
+      ],
+      "decisions": [
+        "private_transport_excluded"
+      ]
+    },
+    {
+      "sha256": "ff6592ed63ba95e90b7e4fa7083617e7a40ef0d1858f2f9e005ef39cd8695577",
+      "bytes": 1377,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/merge_synthetic_ancestry_fixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "d763666e0f9b5c0e52de8801d2c050469a93b800d1dcdfde0325786d9328e497",
+      "bytes": 847,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/prepare_ancestry_tests.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "f291652fa4d94b94c3e85aa31d9897478c1f62cb82143545e64bd21ae3e67af0",
+      "bytes": 57,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/preview-check.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "2e417b2d82c85868026094d749eb565772c4bc72b3bb3f77fd6c1a33c68956c2",
+      "bytes": 3784,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/preview_ancestry_story.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "17d9ff4fcff52b484ff320781e38e30c4dfdeb6eba31d8c7393c17d21ec20bdf",
+      "bytes": 2817,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/preview_discovery_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "b88c48c53b6f95f0d1f3d83278bc219824d88ea89791c3b16e09cdf5215057d3",
+      "bytes": 1400,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/rollback_ancestry_release.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "0bc4268f092c703d2a1eb9e0d01a386be2f314b579f5231eb096502a0944e0b1",
+      "bytes": 5634,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/select_regional_sources.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "b902c9b775124d9b3f2cc6a3aebde9e39f35374af5085076b4787b6a78fd5686",
+      "bytes": 1820,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/setup_ethnicity_stage.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "6ea82cef2475196a1c471e2c44ec874b543a0b9d553cab8162bbd6e240ed1116",
+      "bytes": 2272,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_hwe.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "0e2368fc55cbdcd48d82023926f8068ac9a87d93d7e5766f944a293d0379100f",
+      "bytes": 29731,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/validate_regional_mixture.py"
+      ],
+      "decisions": [
+        "restored_portable_tool"
+      ]
+    },
+    {
+      "sha256": "7f1a406bbc298f861398b609a905ee859daac8c125cd883580fa7f6cc241f6ef",
+      "bytes": 1080,
+      "sources": [
+        "_dna_ethnicity_upgrade_20260905/scripts/verify_ancestry_backend.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "8c6d82f4648944a88e3d2ad968c3eee35bc1991579040688c9ae5379274f4649",
+      "bytes": 101873,
+      "sources": [
+        "_dna_lab_upgrade_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "84bce9f25ba8614a80853bbb471e70fe0069d2ee90049ae7ecf2c36d4c531ed6",
+      "bytes": 7560,
+      "sources": [
+        "_dna_lab_upgrade_20260905/scripts/test_interface.cjs"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "be1f85db72a29ada06da1c87ff2ed1a5c9ce64e98db66ca11e7aee275d84abf8",
+      "bytes": 4695,
+      "sources": [
+        "_dna_lab_upgrade_20260905/scripts/verify_interface.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "b08939d0d4d86c3a5971f70e7de4006962bbe663e6faf08ec594a24c190dff89",
+      "bytes": 138028,
+      "sources": [
+        "_dna_origins_upgrade_20260905/scripts/dna-extracted.js"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "9d6ed7e0d7985d0aef49e2fee0b76576bb3a7cebe4c26835e566307d3fdeabdf",
+      "bytes": 6018,
+      "sources": [
+        "_dna_origins_upgrade_20260905/scripts/preview_origins_ui.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "e0f9c7da020bcdea29dad8358eca4679213df102f58783083de034254781270d",
+      "bytes": 4784,
+      "sources": [
+        "_dna_origins_upgrade_20260905/scripts/verify_interface.py"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "32695adb24485562ac2f1cb67ec11744733a727fea98422df8af7f5382e5bf7b",
+      "bytes": 1332,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/deploy_validation.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "b56dabd85424f87636806f62d54daa6e448492012d00bb2fd30df935fdb7c315",
+      "bytes": 8328,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/evaluate_ashkenazi_trace.py"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "c4ea29b725ebf0af45d1537a6983b886a7755e04b67053783f74a8e7f4dac886",
+      "bytes": 5984,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/local_composition_audit.py"
+      ],
+      "decisions": [
+        "private_owner_workflow_excluded"
+      ]
+    },
+    {
+      "sha256": "95947fb4ff7e3501f525f594c84e37e824b2093281b23322c5cadb8d0511af07",
+      "bytes": 716,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/prepare_validation_tests.sh"
+      ],
+      "decisions": [
+        "historical_qa_harness"
+      ]
+    },
+    {
+      "sha256": "7ca71af9c7a8f0cd3324f855b8c6801a5d7815ded3557da8726754a105844a0d",
+      "bytes": 3233,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/preview_customer.py"
+      ],
+      "decisions": [
+        "historical_ui_generator_or_snapshot"
+      ]
+    },
+    {
+      "sha256": "7b2bd2b32aed28faed4d672bbff945d798c27a1eaea978c0e3272c8dcb574253",
+      "bytes": 1270,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/rollback_validation.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "bc03995cc94da51b7d43ff08af54e417c79f0078c7843ae2f729d339842a1e04",
+      "bytes": 1254,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/setup_validation_stage.sh"
+      ],
+      "decisions": [
+        "historical_host_operations_excluded"
+      ]
+    },
+    {
+      "sha256": "1e9d43e7ed7dbb2c98e1748b5cb01572bc1cc849ef1928218a77d89bf3118bf3",
+      "bytes": 18656,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/test_country.cjs"
+      ],
+      "decisions": [
+        "byte_identical_public_source"
+      ]
+    },
+    {
+      "sha256": "25de5ff844ebca665b3af2a6a8cea898df7da1dd48661e88100b3497472ac32b",
+      "bytes": 1148,
+      "sources": [
+        "_dna_validation_release_20260905/scripts/test_local_audit_gates.py"
+      ],
+      "decisions": [
+        "private_owner_workflow_excluded"
+      ]
+    }
+  ],
+  "additional_compatibility_entrypoint": {
+    "source": "ZeroThink/scripts/update-dna-data-packs",
+    "bytes": 19218,
+    "sha256": "fd90053920e69b26b220662d423bf41c0aa27019f0f6afda335088718c11e45d",
+    "decision": "replaced_with_portable_wrapper",
+    "reason": "Original compatibility builder had historical owner-host configuration. The portable entrypoint delegates to the maintained underscore builder; no dataset downloaded for verification.",
+    "destination": "web/scripts/update-dna-data-packs",
+    "destination_sha256": "5102bed51ed54cfcbddeabeba3d9ca278cd5c3b178d1aa02101c0f53aa499ddc",
+    "verification": "Bash syntax and exact argument forwarding against a temporary synthetic stub; maintained downloader not executed"
+  },
+  "verification": {
+    "python_ast_files": 42,
+    "synthetic_tests": 6,
+    "compatibility_wrapper_syntax": true,
+    "compatibility_argument_forwarding": true,
+    "datasets_processed": false,
+    "reference_downloads": false
+  },
+  "script_folder_companion_assets": [
+    {
+      "source": "_dna_country_release_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/synthetic-origins-ui.json",
+      "bytes": 7532,
+      "sha256": "5f4b929a969d2ac38b2b729e1bb739c2af99c25f19ee075cfe163f55374478cf",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_customer_release_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/discovery_studios.html",
+      "bytes": 4524,
+      "sha256": "b9e2c2e9ffe00aeb51fb14e775a3867f09c81a42c2a04f7f7ef28fbc12b87f3f",
+      "decision": "historical_ui_style_or_preview_snapshot",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/origins-ui.css",
+      "bytes": 20642,
+      "sha256": "633bdcd5bdffc58fc27ac16561e001205c266104d7e5422df8a9c2d8e2c7ce0e",
+      "decision": "historical_ui_style_or_preview_snapshot",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/synthetic-origins-ui.json",
+      "bytes": 7532,
+      "sha256": "5f4b929a969d2ac38b2b729e1bb739c2af99c25f19ee075cfe163f55374478cf",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_discovery_upgrade_20260905/scripts/world-atlas-2.0.2-countries-110m.json",
+      "bytes": 107761,
+      "sha256": "2516c915867c7baf18ddec727aec46c315541a07cfb3d79a6559b05d5e94eee8",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/synthetic-origins-ui.json",
+      "bytes": 7532,
+      "sha256": "5f4b929a969d2ac38b2b729e1bb739c2af99c25f19ee075cfe163f55374478cf",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_ethnicity_upgrade_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_lab_upgrade_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/origins-ui.css",
+      "bytes": 20642,
+      "sha256": "633bdcd5bdffc58fc27ac16561e001205c266104d7e5422df8a9c2d8e2c7ce0e",
+      "decision": "historical_ui_style_or_preview_snapshot",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/synthetic-origins-ui.json",
+      "bytes": 7532,
+      "sha256": "5f4b929a969d2ac38b2b729e1bb739c2af99c25f19ee075cfe163f55374478cf",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/synthetic-ui-report.json",
+      "bytes": 2694,
+      "sha256": "01de59a3ecc1ce671e452db211e89340f2b1f1a33760678b5593ff680a69e206",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    },
+    {
+      "source": "_dna_origins_upgrade_20260905/scripts/world-atlas-2.0.2-countries-110m.json",
+      "bytes": 107761,
+      "sha256": "2516c915867c7baf18ddec727aec46c315541a07cfb3d79a6559b05d5e94eee8",
+      "decision": "synthetic_qa_report_or_third_party_map_data",
+      "reason": "Source companion accounted separately; active maintained UI and map assets are included. No personal report data copied."
+    }
+  ],
+  "companion_authored_ui_occurrences": 3,
+  "companion_authored_ui_unique_hashes": 2
+}

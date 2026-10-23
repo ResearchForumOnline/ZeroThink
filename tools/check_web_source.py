@@ -1,6 +1,6 @@
 """Offline synthetic checks for restored source and the loopback UI boundary."""
 from pathlib import Path
-import argparse, http.client, json, os, re, socket, subprocess, tempfile, time
+import argparse, ast, http.client, json, os, re, socket, subprocess, tempfile, time
 ROOT=Path(__file__).resolve().parents[1];WEB=ROOT/'web'
 
 def main():
@@ -17,6 +17,20 @@ def main():
         if p.suffix.lower() in {'.db','.sqlite','.sqlite3','.pem','.key','.pfx','.zip','.tgz','.gz','.bak'}:sensitive.append(str(rel))
         if p.name.startswith('.env') and p.name!='.env.example':sensitive.append(str(rel))
     assert not sensitive,'Unexpected private/runtime files: '+str(sensitive)
+    # Validate local asset references rather than relying on export extensions.
+    for p in files:
+        if p.suffix.lower() not in {'.php','.html','.css','.js'}:continue
+        source=p.read_text(encoding='utf-8-sig',errors='replace')
+        for match in re.finditer(r'''(?:src|href|poster)\s*=\s*["'](/assets/[^"'<>]+)["']''',source):
+            asset=match.group(1).split('?')[0].split('#')[0]
+            if any(c in asset for c in ['$', '{', '\\']):continue
+            assert (WEB/asset.lstrip('/')).is_file(),f'Missing referenced asset {asset} in {p.relative_to(WEB)}'
+    for p in files:
+        if p.suffix=='.py':ast.parse(p.read_text(encoding='utf-8-sig'),filename=str(p))
+    manifest=json.loads((WEB/'manifest.json').read_text(encoding='utf-8-sig'))
+    for icon in manifest.get('icons',[]):
+        asset=icon.get('src','')
+        assert asset and '://' not in asset and (WEB/asset.lstrip('/')).is_file(),'PWA icon is missing or external'
     schema=(WEB/'sql/application-schema.sql').read_text(encoding='utf-8')
     assert not re.search(r'(?im)^\s*(INSERT|REPLACE|UPDATE|DELETE)\b',schema),'Database rows in schema'
     assert 'AUTO_INCREMENT=' not in schema,'Private row-counter state in schema'
@@ -24,7 +38,7 @@ def main():
         if p.suffix=='.php':
             result=subprocess.run(php+['-l',str(p)],capture_output=True,text=True)
             if result.returncode:raise RuntimeError(result.stdout+result.stderr)
-    for rel in ['tests/composition_interpretation.php','scripts/tests/test_zero_library_dna.php','scripts/tests/test_zero_library_privacy.php','tests/local-mode.php']:run(php+[str(WEB/rel)])
+    for rel in ['tests/composition_interpretation.php','scripts/tests/test_zero_library_dna.php','scripts/tests/test_zero_library_privacy.php','tests/local-mode.php','scripts/tests/test_local_model_aliases.php']:run(php+[str(WEB/rel)])
     (WEB/'preview').mkdir(exist_ok=True)
     for name in ['discovery','ancestry','customer','country']:run(['node',str(WEB/'scripts'/('test_'+name+'.cjs'))])
     with tempfile.TemporaryDirectory(prefix='zerothink-public-check-') as temp:
