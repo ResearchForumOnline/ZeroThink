@@ -54,6 +54,16 @@ def main():
                 assert request('/dna',{'Host':'evil.example'})[0]==403
                 assert request('/dna',{'Origin':'https://evil.example'})[0]==403
                 assert request('/dna',{'Sec-Fetch-Site':'cross-site'})[0]==403
+                navigation={'Sec-Fetch-Site':'cross-site','Sec-Fetch-Mode':'navigate','Sec-Fetch-Dest':'document'}
+                for path in ['/','/dna','/dna.php','/privacy','/terms','/faq']:
+                    assert request(path,navigation)[0]==200,('Top-level read-only navigation blocked',path)
+                assert request('/dna',{**navigation,'Origin':'https://evil.example'})[0]==403
+                assert request('/dna',{**navigation,'Host':'evil.example'})[0]==403
+                assert request('/dna',{**navigation,'Sec-Fetch-Dest':'iframe'})[0]==403
+                assert request('/dna',{**navigation,'Sec-Fetch-Mode':'cors'})[0]==403
+                assert request('/dna',{**navigation,'Content-Type':'application/json'},'{}')[0]==403
+                assert request('/api_library.php',navigation)[0]==403
+                assert request('/assets/maps/world-countries-110m.json',navigation)[0]==403
                 assert request('/privacy')[0]==200
                 status=request('/api_library.php',{'Content-Type':'application/json'},json.dumps({'action':'dna_status'}))
                 assert status[0]==200 and json.loads(status[2])['status']=='success',status

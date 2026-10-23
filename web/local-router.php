@@ -9,12 +9,19 @@ if (PHP_SAPI !== 'cli-server' || !in_array($remote, ['127.0.0.1', '::1'], true)
     http_response_code(403); exit('Local DNA Lab requires a loopback server and host.');
 }
 $origin = (string) ($_SERVER['HTTP_ORIGIN'] ?? '');
+$path = rawurldecode((string) parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
+// A normal link/address navigation may be cross-site. Only the public local
+// page shell can use this exception; API, asset and embedded requests cannot.
+$readOnlyNavigation = $origin === ''
+    && ($_SERVER['REQUEST_METHOD'] ?? '') === 'GET'
+    && ($_SERVER['HTTP_SEC_FETCH_MODE'] ?? '') === 'navigate'
+    && ($_SERVER['HTTP_SEC_FETCH_DEST'] ?? '') === 'document'
+    && in_array($path, ['/', '/dna', '/dna.php', '/privacy', '/terms', '/faq'], true);
 if (($origin !== '' && $origin !== 'http://' . $host)
-    || in_array($_SERVER['HTTP_SEC_FETCH_SITE'] ?? '', ['cross-site'], true)) {
+    || (($_SERVER['HTTP_SEC_FETCH_SITE'] ?? '') === 'cross-site' && !$readOnlyNavigation)) {
     http_response_code(403); exit('Cross-origin requests are blocked.');
 }
 define('ZEROTHINK_LOCAL_LAB', true);
-$path = rawurldecode((string) parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH));
 if (str_contains($path, "\0") || str_contains($path, '\\') || str_contains($path, '..')) {
     http_response_code(404); exit('Not found.');
 }

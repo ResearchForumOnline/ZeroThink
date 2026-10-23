@@ -5748,11 +5748,11 @@ function zl_dna_local_ancient_grave_matches_path_legacy_unvalidated($path, $name
     if (!is_readable($db_path)) {
         return [
             'installed' => false,
-            'reason' => 'Ancient Grave Match source pack not active yet',
+            'reason' => 'Ancient Grave Match source pack not installed',
             'sample_matches' => [],
             'site_scores' => [],
-            'truth_boundary' => 'The direct grave/site comparison pack is still being expanded. For now, ZeroThink shows ancient-context leads from the current heritage signal.',
-            'source_note' => 'Deeper grave/site matching is queued for expansion.',
+            'truth_boundary' => 'The direct grave/site comparison pack is not installed; no direct grave/site comparison is available.',
+            'source_note' => 'Direct grave/site matching is unavailable without the required source pack.',
         ];
     }
     if (!class_exists('SQLite3')) {
@@ -6723,18 +6723,18 @@ function zl_dna_source_versions() {
     }
     return [
         ['source_name' => 'ZeroThink local parser', 'source_version' => 'ZDNA-MAP v1.2', 'status' => 'bundled'],
-        ['source_name' => 'ClinVar', 'source_version' => 'health evidence source mirror', 'status' => !empty($pack_status['health_core.sqlite']) ? 'active' : 'expanding'],
-        ['source_name' => 'GWAS Catalog', 'source_version' => 'v1.0.2 association source mirror', 'status' => !empty($pack_status['health_core.sqlite']) ? 'source mirror active; personalized effect calls safety-withheld' : 'expanding'],
-        ['source_name' => 'ClinPGx / PharmGKB', 'source_version' => 'CC BY-SA 4.0 source data; adapted into ZeroThink health evidence pack', 'status' => !empty($pack_status['health_core.sqlite']) ? 'source mirror active; personalized calls safety-withheld' : 'expanding'],
-        ['source_name' => 'PGS Catalog', 'source_version' => 'offload metadata mirror for future polygenic-score evidence cards', 'status' => !empty($pack_status['openzero_offload_node']) ? 'mirrored' : 'optional'],
-        ['source_name' => 'HPO / MONDO', 'source_version' => 'offload phenotype and disease-ontology mirror', 'status' => !empty($pack_status['openzero_offload_node']) ? 'mirrored' : 'optional'],
-        ['source_name' => '1000 Genomes / gnomAD frequency references', 'source_version' => 'See the matched panel source_version and reference pack metadata', 'status' => !empty($pack_status['ancestry_core.sqlite']) ? 'installed frequency evidence; ancestry composition uncalibrated' : 'expanding'],
+        ['source_name' => 'ClinVar', 'source_version' => 'health evidence source mirror', 'status' => !empty($pack_status['health_core.sqlite']) ? 'active' : 'not installed'],
+        ['source_name' => 'GWAS Catalog', 'source_version' => 'v1.0.2 association source mirror', 'status' => !empty($pack_status['health_core.sqlite']) ? 'source mirror active; personalized effect calls safety-withheld' : 'not installed'],
+        ['source_name' => 'ClinPGx / PharmGKB', 'source_version' => 'CC BY-SA 4.0 source data; adapted into ZeroThink health evidence pack', 'status' => !empty($pack_status['health_core.sqlite']) ? 'source mirror active; personalized calls safety-withheld' : 'not installed'],
+        ['source_name' => 'PGS Catalog', 'source_version' => 'offload metadata mirror for future polygenic-score evidence cards', 'status' => !empty($pack_status['openzero_offload_node']) ? 'mirrored' : 'optional; not installed'],
+        ['source_name' => 'HPO / MONDO', 'source_version' => 'offload phenotype and disease-ontology mirror', 'status' => !empty($pack_status['openzero_offload_node']) ? 'mirrored' : 'optional; not installed'],
+        ['source_name' => '1000 Genomes / gnomAD frequency references', 'source_version' => 'See the matched panel source_version and reference pack metadata', 'status' => !empty($pack_status['ancestry_core.sqlite']) ? 'installed frequency evidence; ancestry composition uncalibrated' : 'not installed'],
         ['source_name' => 'ZDNA Compact Specialist Lenses', 'source_version' => 'Legacy research heuristics v0.1; not validated reference panels', 'status' => 'legacy experimental heuristics; withheld from public ancestry and identity conclusions'],
-        ['source_name' => 'AADR / Ancient Grave Match', 'source_version' => 'public ancient sample source pack', 'status' => !empty($pack_status['ancient_graves.sqlite']) ? 'active' : 'expanding'],
-        ['source_name' => 'AmtDB / ancient mtDNA context', 'source_version' => 'optional local haplogroup/site context for ancient maternal-line research', 'status' => !empty($pack_status['ancient_graves.sqlite']) ? 'optional companion' : 'optional'],
+        ['source_name' => 'AADR / Ancient Grave Match', 'source_version' => 'public ancient sample source pack', 'status' => !empty($pack_status['ancient_graves.sqlite']) ? 'active' : 'not installed'],
+        ['source_name' => 'AmtDB / ancient mtDNA context', 'source_version' => 'optional local haplogroup/site context for ancient maternal-line research', 'status' => !empty($pack_status['ancient_graves.sqlite']) ? 'optional companion' : 'optional; not installed'],
         ['source_name' => 'GEDCOM 7 lineage import', 'source_version' => 'local parser v0.1', 'status' => 'bundled'],
-        ['source_name' => 'Wikidata public lineage graph', 'source_version' => 'public lineage graph source', 'status' => 'expanding'],
-        ['source_name' => 'OpenZero offload library node', 'source_version' => 'expanded reference storage and background jobs', 'status' => !empty($pack_status['openzero_offload_node']) ? 'online' : 'optional'],
+        ['source_name' => 'Wikidata public lineage graph', 'source_version' => 'public lineage graph source', 'status' => !empty($pack_status['lineage_core.sqlite']) ? 'installed' : 'not installed'],
+        ['source_name' => 'OpenZero offload library node', 'source_version' => 'expanded reference storage and background jobs', 'status' => !empty($pack_status['openzero_offload_node']) ? 'online' : 'optional; not installed'],
     ];
 }
 
@@ -6879,9 +6879,9 @@ function zl_dna_lineage_public_graph_status() {
         'people_count' => 0,
         'edge_count' => 0,
         'source_count' => 0,
-        'pack_band' => 'expanding',
-        'pack_note' => 'Public lineage graph source is being expanded.',
-        'next_step' => 'Refresh the DNA source packs and expand the public lineage graph.',
+        'pack_band' => 'not_installed',
+        'pack_note' => 'Public lineage graph source is not installed; graph searches are unavailable.',
+        'next_step' => 'Install a licensed public lineage graph source pack to enable graph searches.',
     ];
     if (!is_file($path)) {
         return $status;
@@ -7952,7 +7952,7 @@ function zl_dna_ancient_grave_report_path($path, $name = 'raw-dna.txt', $base_ov
         ? 'The wheel shows the broader ancient/country context from the heritage projection. Direct ancient grave samples are listed separately as nearest-sample clues, because a few overlapping public graves can cluster around one site and should not be read as ancestry percentages.'
         : ($installed
             ? 'The Ancient Grave Match source pack is active, but this upload did not overlap enough public ancient markers for a strong direct sample lead. The context lanes still show which ancient-region questions are worth testing next.'
-            : 'Direct grave/site matching is still being expanded for this account. ZeroThink is showing ancient-context leads now: the regions and historical lanes most worth testing once the deeper source pack is active.');
+            : 'The direct grave/site source pack is not installed. Direct sample and grave comparisons are unavailable; any separate ancient-context leads are research context only.');
     $spotlight = [];
     foreach ($context_lanes as $lane) {
         $pct = (float) ($lane['proxy_percent'] ?? 0);
@@ -7975,13 +7975,13 @@ function zl_dna_ancient_grave_report_path($path, $name = 'raw-dna.txt', $base_ov
         $cards[] = zl_dna_evidence_card([
             'title' => 'Ancient Grave Match',
             'claim_type' => 'ancient_grave_match',
-            'claim_label' => $installed ? 'ancient source pack scanned' : 'ancient source pack expanding',
-            'evidence_level' => $installed ? 'ancient_reference_scan' : 'source_expanding',
+            'claim_label' => $installed ? 'ancient source pack scanned' : 'ancient source pack not installed',
+            'evidence_level' => $installed ? 'ancient_reference_scan' : 'source_unavailable',
             'confidence_score' => !empty($top) ? (float) ($top['confidence_score'] ?? 0) : ($installed ? 35 : 18),
             'confidence_band' => !empty($top) ? (string) ($top['confidence_band'] ?? 'medium') : ($installed ? 'low-medium' : 'low'),
             'method' => 'public ancient-sample overlap with exact and shared-allele similarity scoring',
             'source_name' => 'ZeroThink Ancient Grave Match source pack',
-            'source_version' => (string) ($pack['reason'] ?? 'being expanded'),
+            'source_version' => (string) ($pack['reason'] ?? 'source metadata unavailable'),
             'matched_marker_count' => (int) ($pack['matched_marker_count'] ?? 0),
             'explanation' => !empty($top)
                 ? ('Nearest direct sample lead: ' . ($top['public_label'] ?? $top['sample_id'] ?? 'ancient sample') . ', ' . ($top['site_name'] ?? 'unknown site') . ', ' . ($top['modern_country'] ?? 'unknown country') . '. The main wheel still uses broader country/region context, not this single grave lead.')
@@ -8098,7 +8098,7 @@ function zl_dna_ancient_grave_markdown($report) {
     $lines[] = '- File: ' . ($summary['file_name'] ?? 'DNA file');
     $lines[] = '- Markers parsed: ' . number_format((int) ($summary['parsed_variants'] ?? 0));
     $lines[] = '- Raw quality: ' . ($summary['quality_band'] ?? 'unknown') . ' (' . (int) ($summary['quality_score'] ?? 0) . '/100)';
-    $lines[] = '- Legacy individual-sample source pack: ' . (!empty($pack['interpretation_ready']) ? 'validated individual-sample comparison completed' : (!empty($pack['installed']) ? 'installed; individual-sample matching withheld' : 'being expanded'));
+    $lines[] = '- Legacy individual-sample source pack: ' . (!empty($pack['interpretation_ready']) ? 'validated individual-sample comparison completed' : (!empty($pack['installed']) ? 'installed; individual-sample matching withheld' : 'not installed; comparison unavailable'));
     $lines[] = '- Legacy individual-sample markers matched: ' . number_format((int) ($pack['matched_marker_count'] ?? 0));
     $lines[] = '';
     if ($cohen) {
@@ -8494,7 +8494,7 @@ function zl_dna_full_evidence_ledger($raw, $health, $heritage, $lineage = null) 
             'confidence_band' => $pack_ready ? 'source assertions; clinical confidence not established' : 'withheld',
             'method' => $pack_ready ? 'assembly + chromosome + position + REF/ALT + direct genotype matching' : 'fail-closed schema and file-readiness check',
             'source_name' => 'ZeroThink Health Research Source Pack',
-            'source_version' => (string) ($pack['reason'] ?? 'being expanded'),
+            'source_version' => (string) ($pack['reason'] ?? 'source metadata unavailable'),
             'matched_marker_count' => $pack_count,
             'explanation' => $pack_ready ? 'Only directly observed alternate alleles that passed the exact build and locus contract were returned.' : (string) ($pack['reason'] ?? 'Personalized source interpretation was withheld.'),
             'limitations' => 'Research support only. ClinVar assertions can conflict, sparse consumer arrays are incomplete, and important findings require certified confirmation.',
@@ -8929,7 +8929,7 @@ function zl_dna_full_markdown($report) {
     $lines[] = '';
     $lines[] = '### Source Pack Status';
     foreach ((array) ($report['data_pack_status'] ?? []) as $pack) {
-        $lines[] = '- ' . ($pack['display_name'] ?? $pack['label'] ?? 'Source pack') . ': ' . (!empty($pack['installed']) ? 'active' : 'expanding') . ' - ' . ($pack['label'] ?? '');
+        $lines[] = '- ' . ($pack['display_name'] ?? $pack['label'] ?? 'Source pack') . ': ' . (!empty($pack['installed']) ? 'active' : 'not installed') . ' - ' . ($pack['label'] ?? '');
     }
     $lines[] = '';
     return implode("\n", $lines);
@@ -9178,7 +9178,7 @@ function zl_dna_marker_markdown($title, $report, $kind = 'health') {
         $pack = (array) $report['local_reference_pack'];
         $lines[] = '### Country & Region Reference Evidence';
         $lines[] = '';
-        $lines[] = '- Status: ' . (!empty($pack['installed']) ? 'active and scanned' : 'being expanded') . ' - ' . ($pack['reason'] ?? '');
+        $lines[] = '- Status: ' . (!empty($pack['installed']) ? 'active and scanned' : 'not installed; comparison unavailable') . ' - ' . ($pack['reason'] ?? '');
         if (!empty($pack['variants_scanned'])) {
             $lines[] = '- RSID variants checked against country and region references: ' . number_format((int) $pack['variants_scanned']);
         }
