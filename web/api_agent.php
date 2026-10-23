@@ -624,6 +624,13 @@ function zt_featherless_model_map() {
 
 function zt_openzero_local_model_map() {
     return [
+        // Current independent OpenZero runtime; legacy aliases below remain readable.
+        'openzero' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M',
+        'openzero-ministral3' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M',
+        'openzero-ministral3-8b' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M',
+        'hf.co/shafire/openzero-ministral3-8b-runtime-agent-gguf:q5_k_m' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M',
+        'openzerogemma' => 'openzerogemma:latest',
+        'openzerogemma:latest' => 'openzerogemma:latest',
         'openzero-fast' => 'qwen2.5:1.5b',
         'openzero-glm4' => 'glm4:9b-q5',
         'openzero-glm4-9b-q5' => 'glm4:9b-q5',
@@ -766,7 +773,7 @@ function normalize_model_id($provider, $requested) {
         } elseif ($provider === 'featherless') {
             $requested = 'shafire/talktoaiZERO';
         } elseif ($provider === 'zerothink') {
-            $requested = 'glm4:9b-q5';
+            $requested = 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M';
         } elseif ($provider === 'quantum') {
             $requested = 'quantum/gpt-oss-120b-ionq';
         } elseif ($provider === 'quantum_ibm') {

@@ -1,7 +1,8 @@
 <?php
 
 /**
- * Curated model IDs verified against provider documentation and live model APIs.
+ * Historical provider selections and current OpenZero runtime aliases.
+ * Provider catalogues and account access may change; inclusion is not a live-availability guarantee.
  * Keep provider credentials and account-specific availability outside this file.
  */
 function zt_model_catalog(): array
@@ -77,19 +78,8 @@ function zt_model_catalog(): array
             'label' => 'OPENZERO LOCAL (Pro, 5 trial/BYO key)',
             'pro' => true,
             'models' => [
-                ['id' => 'spectra8-q8:latest', 'label' => 'Spectra8 Q8'],
-                ['id' => 'spectramindz-q8:latest', 'label' => 'SpectraMind Z Q8'],
-                ['id' => 'spectramind3-q8:latest', 'label' => 'SpectraMind 3 Q8'],
-                ['id' => 'microspectramind-q8:latest', 'label' => 'Micro SpectraMind Q8'],
-                ['id' => 'talktoaizero-q6:latest', 'label' => 'TalkToAI ZERO Q6'],
-                ['id' => 'talktoaiq-f16:latest', 'label' => 'TalkToAiQ F16'],
-                ['id' => 'gemma4:e4b', 'label' => 'Gemma 4 E4B'],
-                ['id' => 'gemma4:e2b', 'label' => 'Gemma 4 E2B'],
-                ['id' => 'gemma3:12b', 'label' => 'Gemma 3 12B'],
-                ['id' => 'glm4:9b-q5', 'label' => 'GLM 4 9B Q5'],
-                ['id' => 'hermes3:8b-llama3.1-q5_K_M', 'label' => 'Hermes 3 8B Q5'],
-                ['id' => 'qwen2.5:3b', 'label' => 'Qwen 2.5 3B'],
-                ['id' => 'qwen2.5:1.5b', 'label' => 'Qwen 2.5 1.5B'],
+                ['id' => 'hf.co/shafire/OpenZero-Ministral3-8B-Runtime-Agent-GGUF:Q5_K_M', 'label' => 'OpenZero Ministral3 8B Runtime Agent'],
+                ['id' => 'openzerogemma:latest', 'label' => 'OpenZero Gemma 4 E4B (compatibility)'],
             ],
         ],
         'featherless' => [
