@@ -60,6 +60,14 @@ Missing references stay unavailable, including in Markdown. A clone without thos
 packs cannot reproduce an installation that has them. It must not invent ancestry
 percentages or claim those sources are currently being expanded.
 
+The separate [research-datasets catalogue](https://github.com/ResearchForumOnline/research-datasets)
+and [datasets-2026.10.23 release](https://github.com/ResearchForumOnline/research-datasets/releases/tag/datasets-2026.10.23)
+provide the reference-distribution location. Pack IDs are
+`composition-grch37-2026.09.05` and `ancient-origins-grch37-2026.09.05`.
+Use each release bundle's README, provenance, licences and checksum inventory;
+verify the downloaded bytes before a deliberate installation. The source clone
+does not install references or include individual donor genotype matrices.
+
 `scripts/update_dna_data_packs.sh`, the builders, `config/`, `schemas/` and
 `sql/dna_pack_schema.sql` retain the original source-pack contracts. Read a builder
 before running it: downloads are explicit, can be large, and remain subject to the
@@ -73,6 +81,15 @@ bundles. Runtime checks verify their pinned manifests, dependencies and hashes.
 The published-model execution paths currently require the documented Linux
 Python/resource-limit runtime; this is separate from running the base PHP lab on
 Windows. Do not weaken verification to make an unverified bundle load.
+
+For the public GRCh37 composition pack, set `ZEROTHINK_COMPOSITION_PYTHON` to an
+explicit operator-installed Linux Python executable with the required
+dependencies. The loader retains the original bundle pin and separately accepts
+the reviewed GRCh37-only manifest, filters out uninstalled GRCh38 metadata, and
+refuses unsupported builds before collecting model calls. See
+[composition bundle profiles and runtime controls](../docs/COMPOSITION_BUNDLES.md).
+Windows can verify the pack's source hashes but does not gain a composition
+execution path without the required Linux controls.
 
 ## Account-backed full web application
 

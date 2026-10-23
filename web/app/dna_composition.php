@@ -8,26 +8,92 @@ function zcomp_bundle_path() {
     $path = trim((string) getenv('ZEROTHINK_COMPOSITION_BUNDLE'));
     return rtrim($path !== '' ? $path : '/mnt/data/zerothink/dna-engines/bigsnpr-16858534-v3', '/\\');
 }
-function zcomp_bundle() {
-    static $cache = [];
-    $path = zcomp_bundle_path(); if (isset($cache[$path])) { return $cache[$path]; }
-    $manifest = $path.'/manifest.json';
-    if (!is_readable($manifest) || hash_file('sha256', $manifest) !== '94a2a30e47d94cb7e53fc47d02a4bfb6432ec3416f572427ad07bec114592b18') { throw new RuntimeException('Pinned composition source unavailable'); }
-    $data = json_decode(file_get_contents($manifest), true);
-    if (!is_array($data) || ($data['schema_version'] ?? '') !== 'bigsnpr-runtime-v1') { throw new RuntimeException('Composition manifest unavailable'); }
-    foreach ($data['files'] as $relative => $expected) {
-        if (strpos($relative,'..') !== false || substr($relative,0,1) === '/') { throw new RuntimeException('Invalid composition source'); }
-        $file = $path.'/'.$relative;
-        if (!is_readable($file) || filesize($file) !== $expected['bytes'] || hash_file('sha256',$file) !== $expected['sha256']) { throw new RuntimeException('Composition source mismatch'); }
+function zcomp_manifest_profile($sha256) {
+    $profiles = [
+        '94a2a30e47d94cb7e53fc47d02a4bfb6432ec3416f572427ad07bec114592b18' => [
+            'name'=>'legacy_runtime', 'schema'=>'bigsnpr-runtime-v1', 'builds'=>['GRCh37','GRCh38'],
+            'required'=>['model.json','worker.py','weights37.npz','marker_index37.sqlite','weights38.npz','marker_index38.sqlite','runtime/bin/python'],
+        ],
+        '5330a197b6b0203cbb985ebfd50bf68ae1fbcd8f1dc190933329d27db33d2747' => [
+            'name'=>'public_grch37', 'schema'=>'zerothink-composition-reference-v1', 'builds'=>['GRCh37'],
+            'required'=>['model.json','worker.py','weights37.npz','marker_index37.sqlite','SOURCE_MANIFEST.json','licenses/CC-BY-4.0.txt','licenses/COPYING.GPL-3.0','licenses/GrafAnc-MIT.txt'],
+        ],
+    ];
+    if (!is_string($sha256) || !isset($profiles[$sha256])) { throw new RuntimeException('Pinned composition source unavailable'); }
+    return $profiles[$sha256];
+}
+function zcomp_source_file($path,$relative,$expected,$strict_paths=false) {
+    if (!is_string($relative) || $relative === '' || preg_match('/[\\\\:\x00-\x1f\x7f]/',$relative)) { throw new RuntimeException('Invalid composition source path'); }
+    foreach (explode('/',$relative) as $part) { if ($part === '' || $part === '.' || $part === '..') { throw new RuntimeException('Invalid composition source path'); } }
+    if (!is_array($expected) || !is_int($expected['bytes'] ?? null) || $expected['bytes'] < 0 || !is_string($expected['sha256'] ?? null) || !preg_match('/^[0-9a-f]{64}$/D',$expected['sha256'])) { throw new RuntimeException('Invalid composition source metadata'); }
+    $file = $path.'/'.$relative;
+    if ($strict_paths) {
+        $root = realpath($path); $resolved = realpath($file);
+        if ($root === false || $resolved === false || strpos($resolved,$root.DIRECTORY_SEPARATOR) !== 0 || is_link($file)) { throw new RuntimeException('Invalid composition source location'); }
     }
-    if (!is_executable($path.'/runtime/bin/python') || !is_executable('/usr/bin/timeout') || !is_executable('/usr/bin/prlimit') || !function_exists('proc_open') || !class_exists('SQLite3')) { throw new RuntimeException('Local composition runtime unavailable'); }
-    $model = json_decode(file_get_contents($path.'/model.json'),true);
-    if (($model['schema_version'] ?? '') !== 'bigsnpr-composition-v1' || count($model['components'] ?? []) !== 18) { throw new RuntimeException('Composition model unavailable'); }
-    return $cache[$path] = $model;
+    clearstatcache(true,$file);
+    if (!is_file($file) || !is_readable($file) || filesize($file) !== $expected['bytes'] || hash_file('sha256',$file) !== $expected['sha256']) { throw new RuntimeException('Composition source mismatch'); }
+    return $file;
+}
+function zcomp_verified_source($path=null) {
+    $path = $path === null ? zcomp_bundle_path() : $path;
+    if (!is_string($path) || $path === '' || strpos($path,"\0") !== false || !is_dir($path)) { throw new RuntimeException('Pinned composition source unavailable'); }
+    $manifest = $path.'/manifest.json'; clearstatcache(true,$manifest);
+    if (!is_file($manifest) || is_link($manifest) || !is_readable($manifest) || filesize($manifest) > 1048576) { throw new RuntimeException('Pinned composition source unavailable'); }
+    $text = file_get_contents($manifest); $profile = zcomp_manifest_profile(hash('sha256',$text));
+    $data = json_decode($text,true);
+    if (!is_array($data) || ($data['schema_version'] ?? '') !== $profile['schema'] || !is_array($data['files'] ?? null) || count($data['files']) > 5000) { throw new RuntimeException('Composition manifest unavailable'); }
+    foreach ($profile['required'] as $relative) { if (!array_key_exists($relative,$data['files'])) { throw new RuntimeException('Incomplete composition source'); } }
+    if ($profile['name'] === 'public_grch37' && (($data['supported_builds'] ?? null) !== ['GRCh37'] || count($data['files']) !== count($profile['required']))) { throw new RuntimeException('Invalid composition build scope'); }
+    foreach ($data['files'] as $relative => $expected) { zcomp_source_file($path,$relative,$expected,$profile['name'] === 'public_grch37'); }
+    $model_file = $path.'/model.json';
+    if (filesize($model_file) > 1048576) { throw new RuntimeException('Composition model unavailable'); }
+    $model = json_decode(file_get_contents($model_file),true);
+    if (!is_array($model) || ($model['schema_version'] ?? '') !== 'bigsnpr-composition-v1' || !is_array($model['components'] ?? null) || count($model['components']) !== 18) { throw new RuntimeException('Composition model unavailable'); }
+    $counts = [];
+    foreach ($profile['builds'] as $assembly) {
+        $count = $model['marker_count_by_build'][$assembly] ?? null;
+        if (!is_int($count) || $count < 50000) { throw new RuntimeException('Composition marker metadata unavailable'); }
+        $counts[$assembly] = $count;
+    }
+    // The legacy model.json retains historical 38 metadata; the installed manifest controls actual support.
+    $model['marker_count_by_build'] = $counts;
+    return ['model'=>$model,'profile'=>$profile,'supported_builds'=>$profile['builds'],'bundle_path'=>realpath($path)];
+}
+function zcomp_runtime_python($path,$profile) {
+    // Explicit interpreter selection never weakens the original POSIX process/resource boundary.
+    if (PHP_OS_FAMILY !== 'Linux' || !is_executable('/usr/bin/timeout') || !is_executable('/usr/bin/prlimit') || !function_exists('proc_open') || !class_exists('SQLite3')) { throw new RuntimeException('Local composition runtime unavailable'); }
+    $configured = trim((string)getenv('ZEROTHINK_COMPOSITION_PYTHON'));
+    $python = $configured !== '' ? $configured : ($profile['name'] === 'legacy_runtime' ? $path.'/runtime/bin/python' : '');
+    if ($python === '' || substr($python,0,1) !== '/' || strpos($python,"\0") !== false) { throw new RuntimeException('Explicit local composition Python unavailable'); }
+    $resolved = realpath($python);
+    if ($resolved === false || !is_file($resolved) || !is_executable($resolved)) { throw new RuntimeException('Local composition Python unavailable'); }
+    // Keep the operator/venv invocation path: resolving its Python symlink would discard pyvenv.cfg.
+    return $python;
+}
+function zcomp_build_suffix($assembly,$supported_builds) {
+    if (!in_array($assembly,['GRCh37','GRCh38'],true) || !in_array($assembly,$supported_builds,true)) { throw new RuntimeException('Composition reference build unavailable'); }
+    return $assembly === 'GRCh37' ? '37' : '38';
+}
+function zcomp_bundle() {
+    $source = zcomp_verified_source(); $model = $source['model'];
+    $model['_python_executable'] = zcomp_runtime_python($source['bundle_path'],$source['profile']);
+    $model['_supported_builds'] = $source['supported_builds']; $model['_bundle_path'] = $source['bundle_path'];
+    return $model;
+}
+function zcomp_worker_command($model,$infile,$output,$assembly) {
+    $build = zcomp_build_suffix($assembly,$model['_supported_builds']);
+    return ['/usr/bin/timeout','--signal=TERM','--kill-after=2','30','/usr/bin/prlimit','--as=805306368','--cpu=25','--',$model['_python_executable'],$model['_bundle_path'].'/worker.py',$model['_bundle_path'],$infile,$output,$build];
 }
 function zl_dna_composition_catalog() {
     $out = ['available'=>false,'status'=>'model_unavailable','source_name'=>'bigsnpr / Privé 2022','source_url'=>'https://doi.org/10.1093/bioinformatics/btac348','source_version'=>'Figshare16858534.v3 / bigsnpr4bc7f817','minimum_markers'=>50000,'minimum_chromosomes'=>15,'boundary'=>zcomp_boundary()];
-    try { $m=zcomp_bundle(); return array_merge($out,['available'=>true,'status'=>'published_model_installed','reference_groups'=>$m['components'],'marker_count_by_build'=>$m['marker_count_by_build'],'data_license'=>'CC BY 4.0','software_license'=>'GPL-3.0-or-later']); }
+    try {
+        $source=zcomp_verified_source(); $m=$source['model'];
+        $out=array_merge($out,['source_installed'=>true,'supported_builds'=>$source['supported_builds'],'reference_groups'=>$m['components'],'marker_count_by_build'=>$m['marker_count_by_build'],'data_license'=>'CC BY 4.0','software_license'=>'GPL-3.0-or-later']);
+        try { zcomp_runtime_python($source['bundle_path'],$source['profile']); }
+        catch (Throwable $e) { return array_merge($out,['status'=>'local_runtime_unavailable']); }
+        return array_merge($out,['available'=>true,'status'=>'published_model_installed']);
+    }
     catch (Throwable $e) { return $out; }
 }
 function zcomp_decode_output($text,$expected_count,$expected_chromosomes,$model) {
@@ -55,13 +121,14 @@ function zcomp_decode_output($text,$expected_count,$expected_chromosomes,$model)
 function zl_dna_composition_report_path($path,$name,$summary,$classification=null) {
     $catalog=zl_dna_composition_catalog();
     $out=array_merge($catalog,['installed'=>$catalog['available'],'available'=>false,'components'=>[],'matched_markers'=>0,'chromosome_count'=>0,'headline'=>'Reference-model ancestry composition','plain'=>'The published composition model is not currently available.','method'=>'Published allele-frequency and PCA-loading projection with the author’s fixed shrinkage correction, a constrained mixture fit and the required merge into 18 reference groups. No imputation or inferred strand flips.','confidence_status'=>'not_consumer_calibrated']);
-    if (!$catalog['available']) { return $out; }
+    if (!$catalog['available']) { if (!empty($catalog['source_installed'])) { $out['plain']='The pinned composition reference is installed, but its required Linux Python runtime or resource controls are unavailable.'; } return $out; }
     $gate=zlt_file_gate($summary);
     if (empty($gate['ready']) || !in_array($gate['assembly'] ?? '',['GRCh37','GRCh38'],true)) { $out['status']='needs_file_validation'; $out['plain']='Confirm an unambiguous genome build and forward allele orientation before estimating reference-model proportions.'; return $out; }
+    if (!in_array($gate['assembly'],$catalog['supported_builds'] ?? [],true)) { $out['status']='reference_build_unsupported'; $out['plain']='This installed composition reference does not support the confirmed genome build. No alternate-build lookup or percentage estimate is attempted.'; return $out; }
     if (is_array($classification) && ($classification['available'] ?? false) === true && ($classification['broad']['code'] ?? '') === 'OCN') { $out['status']='reference_region_unsupported'; $out['plain']='The broad ancestry model indicates Oceania, which this composition reference does not represent. A percentage breakdown is withheld.'; return $out; }
     $dir=null; $proc=null; $pipes=[]; $old_umask=null;
     try {
-        $bundle=zcomp_bundle_path(); $model=zcomp_bundle(); $build=$gate['assembly']==='GRCh37'?'37':'38';
+        $model=zcomp_bundle(); $bundle=$model['_bundle_path']; $build=zcomp_build_suffix($gate['assembly'],$model['_supported_builds']);
         $input=zlg_collect_model_calls($path,$gate['assembly'],$bundle.'/marker_index'.$build.'.sqlite',zl_dna_max_raw_rows());
         $out['diagnostics']=$input['diagnostics']; $out['matched_markers']=$input['diagnostics']['matched_markers']; $out['chromosome_count']=$input['diagnostics']['chromosome_count'];
         if ($input['diagnostics']['input_incomplete'] || !empty($summary['truncated'])) { $out['status']='input_incomplete'; $out['plain']='The supported scan limit was reached. No partial composition estimate is presented.'; return $out; }
@@ -77,7 +144,7 @@ function zl_dna_composition_report_path($path,$name,$summary,$classification=nul
             }
         } finally { fclose($handle); }
         unset($input);
-        $cmd=['/usr/bin/timeout','--signal=TERM','--kill-after=2','30','/usr/bin/prlimit','--as=805306368','--cpu=25','--',$bundle.'/runtime/bin/python',$bundle.'/worker.py',$bundle,$infile,$output,$build];
+        $cmd=zcomp_worker_command($model,$infile,$output,$gate['assembly']);
         $env=['PATH'=>'/usr/bin:/bin','LANG'=>'C','LC_ALL'=>'C','OPENBLAS_NUM_THREADS'=>'1','OMP_NUM_THREADS'=>'1','MKL_NUM_THREADS'=>'1','PYTHONDONTWRITEBYTECODE'=>'1','PYTHONNOUSERSITE'=>'1'];
         $proc=proc_open($cmd,[0=>['pipe','r'],1=>['pipe','w'],2=>['pipe','w']],$pipes,$dir,$env,['bypass_shell'=>true]);
         if (!is_resource($proc)) { throw new RuntimeException('Local composition process unavailable'); }

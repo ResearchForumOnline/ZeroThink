@@ -30,6 +30,15 @@ The interface and algorithms are source code. Separately licensed reference
 datasets, calibrated model bundles and service credentials are additional inputs;
 publishing code does not manufacture those inputs or validate a biological claim.
 
+Reviewed reference distributions have a separate [dataset catalogue](https://github.com/ResearchForumOnline/research-datasets)
+and [datasets-2026.10.23 release](https://github.com/ResearchForumOnline/research-datasets/releases/tag/datasets-2026.10.23).
+The DNA pack IDs are `composition-grch37-2026.09.05` and
+`ancient-origins-grch37-2026.09.05`. Their installation, provenance and licences
+travel with the reference release; this source checkout does not download them.
+The public composition pack supports GRCh37 only and requires the documented
+Linux Python/resource controls. Read [pinned bundle compatibility](docs/COMPOSITION_BUNDLES.md)
+before installing it. Dataset publication is separate from application-source publication.
+
 ## Run the local DNA Lab
 
 Install PHP 8.2 or newer; enable SQLite3 for installed reference packs. From `web`:

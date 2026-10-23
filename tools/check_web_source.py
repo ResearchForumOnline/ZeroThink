@@ -38,7 +38,7 @@ def main():
         if p.suffix=='.php':
             result=subprocess.run(php+['-l',str(p)],capture_output=True,text=True)
             if result.returncode:raise RuntimeError(result.stdout+result.stderr)
-    for rel in ['tests/composition_interpretation.php','scripts/tests/test_zero_library_dna.php','scripts/tests/test_zero_library_privacy.php','tests/local-mode.php','scripts/tests/test_local_model_aliases.php']:run(php+[str(WEB/rel)])
+    for rel in ['tests/composition_interpretation.php','tests/composition_bundle.php','scripts/tests/test_zero_library_dna.php','scripts/tests/test_zero_library_privacy.php','tests/local-mode.php','scripts/tests/test_local_model_aliases.php']:run(php+[str(WEB/rel)])
     (WEB/'preview').mkdir(exist_ok=True)
     for name in ['discovery','ancestry','customer','country']:run(['node',str(WEB/'scripts'/('test_'+name+'.cjs'))])
     with tempfile.TemporaryDirectory(prefix='zerothink-public-check-') as temp:
