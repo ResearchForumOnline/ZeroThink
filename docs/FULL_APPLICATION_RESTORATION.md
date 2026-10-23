@@ -13,6 +13,17 @@ File hashes in `web/SOURCE_SHA256.json` identify this public source snapshot.
 
 ## Follow-up completeness audit
 
+The final clean-snapshot exporter also caught a nested runtime directory,
+`web/app/data`, that the initial root-only privacy filter missed. It contained
+eight stored PDF artifact metadata records (title, generated filename, timestamps,
+provider/model, size and numeric user ID), plus an empty neural-cache JSON and
+directory protection files. No PDF bodies or genotype/credential fields were in
+those eight records. They are runtime state, not application source, and are
+removed from the current tree and fresh source archive. The guard now rejects
+runtime/data directories at any depth. Original local source/data were preserved.
+Removing a file from the current tree does not remove its older Git history or
+previous release archives; those require a separate published-history cleanup.
+
 The first restored release contained the main application and modern DNA engine,
 but its extension/folder filters omitted surrounding authored research tools,
 the root PWA manifest, a referenced Quantum Zero presentation video and an

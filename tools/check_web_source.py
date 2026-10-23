@@ -12,7 +12,7 @@ def main():
     sensitive=[]
     for p in files:
         rel=p.relative_to(WEB)
-        if rel.parts[0] in {'data','storage','uploads','user_memories','backups','vendor'}:sensitive.append(str(rel))
+        if any(part in {'data','storage','uploads','user_memories','backups','vendor'} for part in rel.parts[:-1]):sensitive.append(str(rel))
         if rel.parts[0]=='private' and rel.as_posix()!='private/config.example.php':sensitive.append(str(rel))
         if p.suffix.lower() in {'.db','.sqlite','.sqlite3','.pem','.key','.pfx','.zip','.tgz','.gz','.bak'}:sensitive.append(str(rel))
         if p.name.startswith('.env') and p.name!='.env.example':sensitive.append(str(rel))

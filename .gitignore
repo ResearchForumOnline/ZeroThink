@@ -14,6 +14,7 @@ research-output.*
 
 # Full DNA lab: never publish installed datasets or private runtime state.
 web/data/
+web/app/data/
 web/private/*
 !web/private/config.example.php
 web/vendor/
